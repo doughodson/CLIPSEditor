@@ -462,8 +462,8 @@ void MainWindow::about()
                                 "<p>Author: <a href='mailto:novikovag@gmail.com?subject=%6'>"
                                     "Novikov Artem Gennadievich</a></p>"
                                 "<p>Project page: "
-                                    "<a href='https://sourceforge.net/projects/clipseditor/'>"
-                                    "sourceforge</a>"
+                                    "<a href='https://github.com/novikovag/CLIPSEditor'>"
+                                    "github</a>"
                                     "</p>"
                                 "<p>License: <a href='http://www.gnu.org/licenses/gpl.html'>"
                                     "GNU GPL v3</a></p>").
