@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Deftemplate</title>
+</head>
+
+<body>
+    <h2><a name="deftemplate">Deftemplate</a></h2>
+
+    <p>Ordered facts encode information positionally. To access that information, a user must know not only what data
+    is stored in a fact but which field contains the data. Non-ordered (or deftemplate) facts provide the user with the
+    ability to abstract the structure of a fact by assigning names to each field found within the fact. The deftemplate
+    construct is used to create a template which can then be used by non-ordered facts to access fields of the fact by
+    name. The deftemplate construct is analogous to a record or structure definition in programming languages such as
+    Pascal and C.</p>
+
+    <p>The syntax of the deftemplate construct is:</p>
+
+    <p><code>(deftemplate &lt;deftemplate-name&gt; [&lt;comment&gt;]<br>
+    &nbsp;&lt;slot-definition&gt;*)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;slot-definition&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;single-slot-definition&gt; |<br>
+            &lt;multislot-definition&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;single-slot-definition&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(slot &lt;slot-name&gt;<br>
+            &nbsp;&lt;template-attribute&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;multislot-definition&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(multislot &lt;slot-name&gt;<br>
+            &nbsp;&lt;template-attribute&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;template-attribute&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;default-attribute&gt; |<br>
+            &lt;constraint-attribute&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;default-attribute&gt; &nbsp;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(default ?DERIVE | ?NONE | &lt;expression&gt;*) |<br>
+            (default-dynamic &lt;expression&gt;*)</code></td>
+        </tr>
+    </table>
+</body>
+</html>

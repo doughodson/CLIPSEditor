@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="HTML Tidy for Windows (vers 25 March 2009), see www.w3.org" name="generator">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Math Functions</title>
+</head>
+
+<body>
+    <h2>Math Functions</h2>
+
+    <p>The math functions have been divided into three broad categories. The</p>
+
+    <p>basic math functions are always provided with CLIPS. The trigonometric</p>
+
+    <p>and extended math functions are included as part of the extended math</p>
+
+    <p>package.</p>
+
+    <h2>Basic Math Functions</h2>
+
+    <p>The following functions perform basic mathematical operations.</p>
+
+    <h2><a name="+">+</a></h2>
+
+    <p>Returns the sum of its arguments.</p>
+
+    <p><code>(+ &lt;numeric-expression&gt; &lt;numeric-expression&gt;+)</code></p>
+
+    <p>Returns the first argument minus all subsequent arguments.</p>
+
+    <h2><a name="-">-</a></h2>
+
+    <p>Returns the first argument minus all subsequent arguments.</p>
+
+    <p><code>(- &lt;numeric-expression&gt; &lt;numeric-expression&gt;+)</code></p>
+
+    <h2><a name="*">*</a></h2>
+
+    <p>Returns the product of its arguments.</p>
+
+    <p><code>(* &lt;numeric-expression&gt; &lt;numeric-expression&gt;+)</code></p>
+
+    <h2><a name="/">/</a></h2>
+
+    <p>Returns the first argument divided by all subsequent arguments.</p>
+
+    <p><code>(/ &lt;numeric-expression&gt; &lt;numeric-expression&gt;+)</code></p>
+
+    <h3><a name="abs">abs</a></h3>
+
+    <p>Returns the absolute value of its only argument.</p>
+
+    <p><code>(abs &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="div">div</a></h3>
+
+    <p>Returns the first argument divided by all subsequent arguments using integer division.</p>
+
+    <p><code>(div &lt;numeric-expression&gt; &lt;numeric-expression&gt;+)</code></p>
+
+    <h3><a name="float">float</a></h3>
+
+    <p>Converts its only argument to a float.</p>
+
+    <p><code>(float &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="integer">integer</a></h3>
+
+    <p>Converts its only argument to an integer.</p>
+
+    <p><code>(integer &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="max">max</a></h3>
+
+    <p>Returns the value of its largest numeric argument.</p>
+
+    <p><code>(max &lt;numeric-expression&gt;+)</code></p>
+
+    <h3><a name="min">min</a></h3>
+
+    <p>Returns the value of its smallest numeric argument.</p>
+
+    <p><code>(min &lt;numeric-expression&gt;+)</code></p>
+
+    <h2>Extended Math Functions</h2>
+
+    <p>The following functions perform extended mathematical operations and are included as part of the extended math
+    package.</p>
+
+    <h2><a name="**">**</a></h2>
+
+    <p>Raises its first argument to the power of its second argument.</p>
+
+    <p><code>(** &lt;numeric-expression&gt; &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="deg-grad">deg-grad</a></h3>
+
+    <p>Converts its only argument from degrees to gradients.</p>
+
+    <p><code>(deg-grad &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="deg-rad">deg-rad</a></h3>
+
+    <p>Converts its only argument from degrees to radians.</p>
+
+    <p><code>(deg-rad &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="exp">exp</a></h3>
+
+    <p>Raises the value e to the power of its only argument.</p>
+
+    <p><code>(exp &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="grad-deg">grad-deg</a></h3>
+
+    <p>Converts its only argument from gradients to degrees.</p>
+
+    <p><code>(grad-deg &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="log">log</a></h3>
+
+    <p>Returns the logarithm base e of its only argument.</p>
+
+    <p><code>(log &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="log10">log10</a></h3>
+
+    <p>Returns the logarithm base 10 of its only argument.</p>
+
+    <p><code>(log10 &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="mod">mod</a></h3>
+
+    <p>Returns the remainder of the result of dividing its first argument by its second argument (assuming that the
+    result of division must be an integer).</p>
+
+    <p><code>(mod &lt;numeric-expression&gt; &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="pi">pi</a></h3>
+
+    <p>Returns the value of pi.</p>
+
+    <p><code>(pi)</code></p>
+
+    <h3><a name="rad-deg">rad-deg</a></h3>
+
+    <p>Converts its only argument from radians to degrees.</p>
+
+    <p><code>(rad-deg &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="round">round</a></h3>
+
+    <p>Rounds its argument toward the closest integer or negative infinity if exactly between two integers.</p>
+
+    <p><code>(round &lt;numeric-expression&gt;)</code></p>
+
+    <h3><a name="sqrt">sqrt</a></h3>
+
+    <p>Returns the square root of its only argument.</p>
+
+    <p><code>(sqrt &lt;numeric-expression&gt;)</code></p>
+
+    <h2>Trigonometric Functions</h2>
+
+    <p>The following trigonometric functions take one numeric argument and return a float. The argument is expected to
+    be in radians. These functions are part of the extended math package.</p>
+
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="100"><b>function</b></td>
+
+            <td><b>returns</b></td>
+        </tr>
+
+        <tr>
+            <td width="100"><a name="trig">acos<br>
+            acosh<br>
+            acot<br>
+            acoth<br>
+            acsc<br>
+            acsch<br>
+            asec<br>
+            asech<br>
+            asin<br>
+            asinh<br>
+            atan<br>
+            atanh<br>
+            cos<br>
+            cosh<br>
+            cot<br>
+            coth<br>
+            csc<br>
+            csch<br>
+            sec<br>
+            sech<br>
+            sin<br>
+            sinh<br>
+            tan<br>
+            tanh</a></td>
+
+            <td>arccosine<br>
+            hyperbolic arccosine<br>
+            arccotangent<br>
+            hyperbolic arccotangent<br>
+            arccosecant<br>
+            hyperbolic arccosecant<br>
+            arcsecant<br>
+            hyperbolic arcsecant<br>
+            arcsine<br>
+            hyperbolic arcsine<br>
+            arctangent<br>
+            hyperbolic arctangent<br>
+            cosine<br>
+            hyperbolic cosine<br>
+            cotangent<br>
+            hyperbolic tangent<br>
+            cosecant<br>
+            hyperbolic cosecant<br>
+            secant<br>
+            hyperbolic secant<br>
+            sine<br>
+            hyperbolic sine<br>
+            tangent<br>
+            hyperbolic tangent</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Instance Slot Functions</title>
+</head>
+
+<body>
+    <h2>Instance Slot Functions</h2>
+
+    <p>The following functions are used to manipulate instance slots.</p>
+
+    <h3><a name="direct-slot-delete$">direct-slot-delete$</a></h3>
+
+    <p>Allows the deletion of a range of fields in a multifield slot value of the active instance from within a
+    message-handler.</p>
+
+    <p><code>(direct-slot-delete$ &lt;mv-slot-name&gt; &lt;range-begin&gt; &lt;range-end&gt;)</code></p>
+
+    <h3><a name="direct-slot-insert$">direct-slot-insert$</a></h3>
+
+    <p>Allows the insertion of one or more values in a multifield slot value of the active instance from within a
+    message-handler.</p>
+
+    <p><code>(direct-slot-insert$ &lt;mv-slot-name&gt; &lt;index&gt; &lt;expression&gt;+)</code></p>
+
+    <h3><a name="direct-slot-replace$">direct-slot-replace$</a></h3>
+
+    <p>Allows the replacement of a range of fields in a multifield slot value of the active instance from within a
+    message-handler.</p>
+
+    <p><code>(direct-slot-replace$ &lt;mv-slot-name&gt; &lt;range-begin&gt; &lt;range-end&gt;
+    &lt;expression&gt;+)</code></p>
+
+    <h3><a name="dynamic-get">dynamic-get</a></h3>
+
+    <p>Returns the value of the specified slot of the active instance.</p>
+
+    <p><code>(dynamic-get &lt;slot-name-expression&gt;)</code></p>
+
+    <h3><a name="dynamic-put">dynamic-put</a></h3>
+
+    <p>Sets the value of the specified slot of the active instance.</p>
+
+    <p><code>(put &lt;slot-name-expression&gt; &lt;expression&gt;*)</code></p>
+
+    <h3><a name="slot-delete$">slot-delete$</a></h3>
+
+    <p>Allows the deletion of a range of fields in a multifield slot value.</p>
+
+    <p><code>(slot-delete$ &lt;instance-expression&gt; &lt;mv-slot-name&gt; &lt;range-begin&gt;</code></p>
+
+    <p><code>&lt;range-end&gt;)</code></p>
+
+    <h3><a name="slot-insert$">slot-insert$</a></h3>
+
+    <p>Allows the insertion of one or more values in a multifield slot value.</p>
+
+    <p><code>(slot-insert$ &lt;instance-expression&gt; &lt;mv-slot-name&gt; &lt;index&gt;
+    &lt;expression&gt;+)</code></p>
+
+    <h3><a name="slot-replace$">slot-replace$</a></h3>
+
+    <p>Allows the replacement of a range of fields in a multifield slot value.</p>
+
+    <p><code>(slot-replaceR &lt;instance-expression&gt; &lt;mv-slot-name&gt;</code></p>
+
+    <p><code>&lt;range-begin&gt; &lt;range-end&gt; &lt;expression&gt;+)</code></p>
+</body>
+</html>

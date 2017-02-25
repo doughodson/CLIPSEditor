@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Fact Functions</title>
+</head>
+
+<body>
+    <h2>Fact Functions</h2>
+
+    <p>The following actions are used for assert, retracting, and modifying facts.</p>
+
+    <h3><a name="assert">assert</a></h3>
+
+    <p>Adds a fact to the fact-list.</p>
+
+    <p><code>(assert &lt;RHS pattern&gt;+)</code></p>
+
+    <h3><a name="assert-string">assert-string</a></h3>
+
+    <p>Converts a string into a fact and asserts it.</p>
+
+    <p><code>(assert-string &lt;string-expression&gt;)</code></p>
+
+    <h3><a name="duplicate">duplicate</a></h3>
+
+    <p>Duplicates a deftemplate fact in the fact-list.</p>
+
+    <p><code>(duplicate &lt;fact-specifier&gt; &lt;RHS-slot&gt;*)</code></p>
+
+    <h3><a name="fact-existp">fact-existp</a></h3>
+
+    <p>Returns TRUE if the fact specified by its fact-index or fact-address argument exists, otherwise FALSE.</p>
+
+    <p><code>(fact-existp &lt;fact-address-or-index&gt;)</code></p>
+
+    <h3><a name="fact-index">fact-index</a></h3>
+
+    <p>Returns the fact index of a fact address.</p>
+
+    <p><code>(fact-index &lt;fact-address&gt;)</code></p>
+
+    <h3><a name="fact-relation">fact-relation</a></h3>
+
+    <p>Returns the deftemplate (relation) name associated the fact.</p>
+
+    <p><code>(fact-relation &lt;fact-address-or-index&gt;)</code></p>
+
+    <h3><a name="fact-slot-names">fact-slot-names</a></h3>
+
+    <p>Returns the slot names associated with the fact.</p>
+
+    <p><code>(fact-slot-names &lt;fact-address-or-index&gt;)</code></p>
+
+    <h3><a name="fact-slot-value">fact-slot-value</a></h3>
+
+    <p>Returns the value of the specified slot from the specified fact.</p>
+
+    <p><code>(fact-slot-value &lt;fact-address-or-index&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="get-fact-list">get-fact-list</a></h3>
+
+    <p>Returns a multifield containing the list of visible facts.</p>
+
+    <p><code>(get-fact-list [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="modify">modify</a></h3>
+
+    <p>Modifies a deftemplate fact in the fact-list.</p>
+
+    <p><code>(modify &lt;fact-specifier&gt; &lt;RHS-slot&gt;*)</code></p>
+
+    <h3><a name="retract">retract</a></h3>
+
+    <p>Removes a fact from the fact-list.</p>
+
+    <p><code>(retract &lt;retract-specifier&gt;+ | *)</code></p>
+
+    <p><code>&lt;retract-specifier&gt; ::= &lt;fact-specifier&gt; | &lt;integer-expression&gt;</code></p>
+</body>
+</html>

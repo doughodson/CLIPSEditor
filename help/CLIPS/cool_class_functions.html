@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Class Functions</title>
+</head>
+
+<body>
+    <h2>CLASS FUNCTIONS</h2>
+
+    <p>The following functions are used with classes.</p>
+
+    <h3><a name="class-abstractp">class-abstractp</a></h3>
+
+    <p>Returns TRUE if the specified class is abstract, FALSE otherwise.</p>
+
+    <p><code>(class-abstractp &lt;class-name&gt;)</code></p>
+
+    <h3><a name="class-existp">class-existp</a></h3>
+
+    <p>Returns TRUE if the specified class is defined, FALSE otherwise.</p>
+
+    <p><code>(class-existp &lt;class-name&gt;)</code></p>
+
+    <h3><a name="class-reactivep">class-reactivep</a></h3>
+
+    <p>Returns TRUE if the specified class is reactive, FALSE otherwise.</p>
+
+    <p><code>(class-reactivep &lt;class-name&gt;)</code></p>
+
+    <h3><a name="class-slots">class-slots</a></h3>
+
+    <p>Returns the names of the explicitly defined slots of a class in a multifield variable. If the optional inherit
+    keyword is given, inherited slots are also included.</p>
+
+    <p><code>(class-slots &lt;class-name&gt; [inherit])</code></p>
+
+    <h3><a name="class-subclasses">class-subclasses</a></h3>
+
+    <p>Returns the names of the direct subclasses of a class in a multifield variable. If the optional "inherit"
+    argument is given, indirect subclasses are also included.</p>
+
+    <p><code>(class-subclasses &lt;class-name&gt; [inherit])</code></p>
+
+    <h3><a name="class-superclasses">class-superclasses</a></h3>
+
+    <p>Returns the names of the direct superclasses of a class in a multifield variable. If the optional "inherit"
+    argument is given, indirect superclasses are also included.</p>
+
+    <p><code>(class-superclasses &lt;class-name&gt; [inherit])</code></p>
+
+    <h3><a name="defclass-module">defclass-module</a></h3>
+
+    <p>Returns the module in which the specified defclass is defined.</p>
+
+    <p><code>(defclass-module &lt;defclass-name&gt;)</code></p>
+
+    <h3><a name="get-class-defaults-mode">get-class-defaults-mode</a></h3>
+
+    <p>Returns the current defaults mode used when classes are defined.</p>
+
+    <p><code>(get-class-defaults-mode)</code></p>
+
+    <h3><a name="get-defclass-list">get-defclass-list</a></h3>
+
+    <p>Returns the list of all defclasses in the specified module (or the current module if unspecified).</p>
+
+    <p><code>(get-defclass-list [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="get-defmessage-handler-list">get-defmessage-handler-list</a></h3>
+
+    <p>Returns the class names, message names, and message types of the message-handlers directly attached to a class
+    in a multifield variable. If the optional inherit keyword is given, inherited message-handlers are also
+    included.</p>
+
+    <p><code>(get-defmessage-handler-list &lt;class-name&gt; [inherit])</code></p>
+
+    <h3><a name="message-handler-existp">message-handler-existp</a></h3>
+
+    <p>Returns TRUE if the specified message-handler is defined (directly, not by inheritance) for the class, FALSE
+    otherwise.</p>
+
+    <p><code>(message-handler-existp &lt;class-name&gt; &lt;handler-name&gt; [&lt;handler-type&gt;])</code></p>
+
+    <p>&lt;handler-type&gt; ::= around | before | primary | after</p>
+
+    <h3><a name="set-class-defaults-mode">set-class-defaults-mode</a></h3>
+
+    <p>Sets the defaults mode used when classes are defined.</p>
+
+    <p><code>(set-class-defaults-mode &lt;mode&gt;)</code></p>
+
+    <p>&lt;mode&gt; ::= convenience | conservation</p>
+
+    <h3><a name="slot-allowed-classes">slot-allowed-classes</a></h3>
+
+    <p>Returns the allowed classes for a slot in a multifield value.</p>
+
+    <p><code>(slot-allowed-classes &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-allowed-values">slot-allowed-values</a></h3>
+
+    <p>Returns the allowed values for a slot in a multifield value.</p>
+
+    <p><code>(slot-allowed-values &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-cardinality">slot-cardinality</a></h3>
+
+    <p>Returns the minimum and maximum number of fields allowed for a multislot in a multifield variable.</p>
+
+    <p><code>(slot-cardinality &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-default-value">slot-default-value</a></h3>
+
+    <p>Returns the default value associated with a slot.</p>
+
+    <p><code>(slot-default-value &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-direct-accessp">slot-direct-accessp</a></h3>
+
+    <p>Returns TRUE if the specified slot can be accessed directly, otherwise FALSE.</p>
+
+    <p><code>(slot-direct-accessp &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-existp">slot-existp</a></h3>
+
+    <p>Returns TRUE if the specified slot is present in the class, FALSE otherwise. If the inherit keyword is
+    specified, then the slot may be inherited.</p>
+
+    <p><code>(slot-existp &lt;class-name&gt; &lt;slot-name&gt; [inherit])</code></p>
+
+    <h3><a name="slot-facets">slot-facets</a></h3>
+
+    <p>Returns the facet values for the specified slot of a class in a multifield value.</p>
+
+    <p><code>(slot-facets &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-initablep">slot-initablep</a></h3>
+
+    <p>Returns TRUE if the specified slot is initializable, otherwise FALSE.</p>
+
+    <p><code>(slot-initablep &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-publicp">slot-publicp</a></h3>
+
+    <p>Returns TRUE if the specified slot is public, otherwise FALSE.</p>
+
+    <p><code>(slot-initablep &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-range">slot-range</a></h3>
+
+    <p>Returns the minimum and maximum numeric values allowed for a slot.</p>
+
+    <p><code>(slot-range &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-sources">slot-sources</a></h3>
+
+    <p>Returns the names of the classes which provide facets for a slot of a class in a multifield variable.</p>
+
+    <p><code>(slot-sources &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-types">slot-types</a></h3>
+
+    <p>Returns the names of the primitive types allowed for a slot in a multifield variable.</p>
+
+    <p><code>(slot-types &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="slot-writablep">slot-writablep</a></h3>
+
+    <p>Returns TRUE if the specified slot is writable, otherwise FALSE.</p>
+
+    <p><code>(slot-writablep &lt;class-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="subclassp">subclassp</a></h3>
+
+    <p>Returns TRUE if the first class is a subclass of the second class, FALSE otherwise.</p>
+
+    <p><code>(subclassp &lt;class1-name&gt; &lt;class2-name&gt;)</code></p>
+
+    <h3><a name="superclassp">superclassp</a></h3>
+
+    <p>Returns TRUE if the first class is a superclass of the second class, FALSE otherwise.</p>
+
+    <p><code>(superclassp &lt;class1-name&gt; &lt;class2-name&gt;)</code></p>
+</body>
+</html>

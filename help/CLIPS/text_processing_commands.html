@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Text Processing Commands</title>
+</head>
+
+<body>
+    <h2>Text Processing Commands</h2>
+
+    <p>The following commands can be used by users to maintain their own information system similar to the help
+    facility.</p>
+
+    <h3><a name="fetch">fetch</a></h3>
+
+    <p>Loads the named file into the internal lookup table.</p>
+
+    <p><code>(fetch &lt;file-name&gt;)</code></p>
+
+    <h3><a name="get-region">get-region</a></h3>
+
+    <p>Looks up a specified entry in a particular file which has been loaded previously into the lookup table and
+    returns the contents of that entry as a string.</p>
+
+    <p><code>(get region &lt;file-name&gt; &lt;topic-field&gt;*)</code></p>
+
+    <h3><a name="print-region">print-region</a></h3>
+
+    <p>Looks up the specified entry in a particular file which has been previously loaded into the lookup table and
+    prints the contents of that entry to the specified logical name.</p>
+
+    <p><code>(print-region &lt;logical-name&gt; &lt;lookup-file&gt; &lt;topic-field&gt;*)</code></p>
+
+    <h3><a name="toss">toss</a></h3>
+
+    <p>Unloads the named file from the internal lookup table.</p>
+
+    <p><code>(toss &lt;file-name&gt;)</code></p>
+</body>
+</html>

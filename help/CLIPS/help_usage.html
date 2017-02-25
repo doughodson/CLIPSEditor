@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Using (help)</title>
+</head>
+
+<body>
+    <h2>Help Usage</h2>
+
+    <p>Using the Help Facility from within the CLIPS dialog window.</p>
+
+    <p>The help facility displays menus of topics and prompts the user for a choice. It then references the help file
+    for that information. The help facility can be called with or without a command-line topic.</p>
+
+    <p>Syntax:</p>
+
+    <p><code>(help [&lt;path&gt;])</code></p>
+
+    <p>where &lt;path&gt; is the full path leading to a topic in the help tree. For example, for information on defrule
+    syntax, the user would type:</p>
+
+    <p><code>(help construct_summary defrule)</code>.</p>
+
+    <p>The help function has no return value.</p>
+
+    <p>Each element or field in the path is delimited by white space, and the help facility is not case sensitive. In
+    addition, the entire name of a field does not need to be specified. Only enough characters to distinguish the field
+    from other choices in the menu are necessary (if there is a conflict, the help facility will pick the first one in
+    the list). For instance, (help con def) would be sufficient for the above example.</p>
+
+    <p>A few special fields can be used while in the help facility.</p>
+
+    <p>^ Branch up one level.</p>
+
+    <p>? When specified at the end of a path, this forces a display of the</p>
+
+    <p>current menu, even on branch-ups.</p>
+
+    <p>&lt;nil&gt; Giving no topic field will branch up one level.</p>
+
+    <p>A branch-up from the MAIN topic root node implies an exit from help.</p>
+
+    <p>By default, the help facility comes up in the MAIN topic root menu and the user may make a choice as described
+    above. The prompt line always displays the name of the current menu. The help facility will branch through the
+    help-tree until instructed to exit by a branch-up from the top level. The level always is reset to the MAIN topic
+    upon exit from the help facility.</p>
+
+    <p>The first call to the help facility will take longer than successive calls while the system loads help
+    information into an internal lookup table. All other calls to the help facility are very fast.</p>
+
+    <p>The help facility reads help information from a file during execution. Users may wish to change the location of
+    the help file to meet the configuration of their system. The help-path function was provided to allow this.</p>
+
+    <p>Syntax:</p>
+
+    <p><code>(help-path [&lt;help-file-name&gt;])</code></p>
+
+    <p>If no argument is specified, the function displays the name of the current help file. If an argument is
+    specified, the help facility will use the new file name for future help references during this CLIPS session. To
+    change the location of the help file permanently, a change must be made in the setup.h file, then CLIPS must be
+    recompiled. The help-path function has no return value.</p>
+</body>
+</html>

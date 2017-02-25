@@ -1,0 +1,72 @@
+﻿Программный блок
+
+* Программный блок начинается с ‘(‘ и продолжается до парной ‘)’ или конца документа 
+* Самый внешний блок является главным, блоки входящие в состав главного, являются вложенными
+* Любой начальный не пробельный символ вне блока, за исключением ‘(‘ и ‘;’ устанавливает строку как ошибочную
+* Пустая строка, содержащая пробельные символы или возврат каретки, помечается как -1
+* Флаг Folded устанавливается только у начального блока
+
+1)
+Общая завершающая строка d, для блоков a и b
++a. (txt1    <- Begin:  1 braceDepth: 1
++b.  (txt2   <- Begin:  1 Nested: 1 braceDepth: 2
+ c.          <- Nested: 1 braceDepth: 2
+ d.   txt1)) <- End:    1 braceDepth: 0
+
+2) 
+Несколько открытий на строке a, сворачивание по a-c
++a. (txt1 (text2 <- Begin: 1 braceDepth: 2
+ b.        txt3) <- End:   1 Nested: 1 braceDepth: 1
+ c.  (txt4))     <- End:   1 braceDepth: 0
+
+3) 
+Однострочный блок
+(text1) Begin: 1 End: 1 braceDepth: 0
+
+Комментарии
+
+* Блок комментариев состоит из двух и более идущих подряд строковых комментариев начинающихся с символа ‘;’ и не входящих в программный блок
+* Комментарии находящиеся внутри программных блоков не учитываются (4), иначе для получения от этого выгоды пришлось бы хранить позицию
+
+1)
+; <- Comment: 1 braceDepth: 0
+
+2)
+; <- Begin: 1 Comment: 1 braceDepth: 1
+; <- End:   1 Comment: 1 braceDepth: 0
+
+3)
+; <- Comment: 1 <- Begin:  1 Comment: 1 braceDepth: 1
+; <- Comment: 1 <- Nested: 1 Comment: 1 braceDepth: 1
+; <- Comment: 1 <- End:    1 Comment: 1 braceDepth: 0
+
+4) 
+a. (txt1             <- Begin:  1 braceDepth: 1
+b.  text2 ; comment1 <- Nested: 1 braceDepth: 1
+c.  ; comment2       <- Nested: 1 braceDepth: 1
+d.  text2)           <- End:    1 braceDepth: 0
+
+Строка
+
+* Строка начинается и заканчивается ‘”’, причем возможно вхождения c экранированием ‘\”’
+* Строка входит в состав блока и может распространяться на несколько последовательных блоков 
+* Строка на входящая в блок считается ошибочной
+
+1)
+a. (txt1 “string” <- Begin: 1 braceDepth: 1
+b.  text2)        <- End:   1 braceDepth: 0
+
+2)
+a. (txt1 “string1  <- Begin:  1 String: 1 braceDepth: 1
+b.  string2” text2 <- Nested: 1 braceDepth: 1
+c.  text3)         <- End:    1 braceDepth: 0
+
+3)
+a. (txt1 “string1  <- Begin:  1 String: 1 braceDepth: 1
+b.  string2        <- Nested: 1 String: 1 braceDepth: 1
+c.  string3”       <- Nested: 1 braceDepth: 1
+d.  text3)         <- End:    1 braceDepth: 0
+
+4)
+a. 123“string1” <- Error: 1 braceDepth/errorPosition: 3
+

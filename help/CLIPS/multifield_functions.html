@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Multifield Functions</title>
+</head>
+
+<body>
+    <h2>Multifield Functions</h2>
+
+    <p>The following functions operate on multifield values.</p>
+
+    <h3><a name="create$">create$</a></h3>
+
+    <p>Appends its arguments together to create a multifield value.</p>
+
+    <p><code>(create$ &lt;expression&gt;*)</code></p>
+
+    <h3><a name="delete$">delete$</a></h3>
+
+    <p>Deletes the specified range from a multifield value.</p>
+
+    <p><code>(delete$ &lt;multifield-expression&gt;</code></p>
+
+    <p><code>&lt;begin-integer-expression&gt; &lt;end-integer-expression&gt;)</code></p>
+
+    <h3><a name="delete-member$">delete-member$</a></h3>
+
+    <p>Deletes specific values contained within a multifield value and returns the modified multifield value.</p>
+
+    <p><code>(delete-member$ &lt;multifield-expression&gt; &lt;expression&gt;+)</code></p>
+
+    <h3><a name="explode$">explode$</a></h3>
+
+    <p>Creates a multifield value from a string.</p>
+
+    <p><code>(explode$ &lt;string-expression&gt;)</code></p>
+
+    <h3><a name="first$">first$</a></h3>
+
+    <p>Returns the first field of a multifield.</p>
+
+    <p><code>(first$ &lt;multifield-expression&gt;)</code></p>
+
+    <h3><a name="implode$">implode$</a></h3>
+
+    <p>Creates a string from a multifield value.</p>
+
+    <p><code>(implode$ &lt;multifield-expression&gt;)</code></p>
+
+    <h3><a name="insert$">insert$</a></h3>
+
+    <p>Inserts one or more values in a multifield.</p>
+
+    <p><code>(insert$ &lt;multifield-expression&gt; &lt;integer-expression&gt;</code></p>
+
+    <p><code>&lt;single-or-multifield-expression&gt;+)</code></p>
+
+    <h3><a name="length$">length$</a></h3>
+
+    <p>Returns the number of fields in a multifield value.</p>
+
+    <p><code>(length$ &lt;multifield-expression&gt;)</code></p>
+
+    <h3><a name="member$">member$</a></h3>
+
+    <p>Returns the position of a single-field value within a multifield value.</p>
+
+    <p><code>(member$ &lt;single-field-expression&gt; &lt;multifield-expression&gt;)</code></p>
+
+    <h3><a name="nth$">nth$</a></h3>
+
+    <p>Returns the specified field of a multifield value.</p>
+
+    <p><code>(nth$ &lt;integer-expression&gt; &lt;multifield-expression&gt;)</code></p>
+
+    <h3><a name="replace$">replace$</a></h3>
+
+    <p>Replaces the specified range of a multifield value with a set of values.</p>
+
+    <p><code>(replace$ &lt;multifield-expression&gt;</code></p>
+
+    <p><code>&lt;begin-integer-expression&gt; &lt;end-integer-expression&gt;</code></p>
+
+    <p><code>&lt;single-or-multifield-expression&gt;+)</code></p>
+
+    <h3><a name="replace-member$">replace-member$</a></h3>
+
+    <p>Replaces specific values contained within a multifield value and returns the modified multifield value.</p>
+
+    <p><code>(replace-member$ &lt;multifield-expression&gt; &lt;substitute-expression&gt;</code></p>
+
+    <p><code>&lt;search-expression&gt;+)</code></p>
+
+    <h3><a name="rest$">rest$</a></h3>
+
+    <p>Returns all but the first field of a multifield.</p>
+
+    <p><code>(rest$ &lt;multifield-expression&gt;)</code></p>
+
+    <h3><a name="subseq$">subseq$</a></h3>
+
+    <p>Extracts the specified range from a multifield value.</p>
+
+    <p><code>(subseq$ &lt;multifield-expression&gt;</code></p>
+
+    <p><code>&lt;begin-integer-expression&gt; &lt;end-integer-expression&gt;)</code></p>
+
+    <h3><a name="subsetp">subsetp</a></h3>
+
+    <p>Returns TRUE if the first argument is a subset of the second argument.</p>
+
+    <p><code>(subsetp &lt;multifield-expression&gt; &lt;multifield-expression&gt;)</code></p>
+</body>
+</html>

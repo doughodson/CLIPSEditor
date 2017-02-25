@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Deffunction</title>
+</head>
+
+<body>
+    <h2><a name="deffunction">Deffunction</a></h2>
+
+    <p>With the deffunction construct, new functions may be defined directly in CLIPS. Deffunctions are equivalent in
+    use to other functions in CLIPS. The only differences between user-defined external functions and deffunctions are
+    that deffunctions are written in CLIPS and executed by CLIPS interpretively and user-defined external functions are
+    written in an external language, such as C, and executed by CLIPS directly. Also, deffunctions allow the addition
+    of new functions without having to recompile and relink CLIPS.</p>
+
+    <p>The syntax of the deffunction construct is:</p>
+
+    <p><code>(deffunction &lt;name&gt; [&lt;comment&gt;]<br>
+    &nbsp;(&lt;regular-parameter&gt;* [&lt;wildcard-parameter&gt;])<br>
+    &nbsp;&lt;action&gt;*)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;regular-parameter&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;single-field-variable&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;wildcard-parameter&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;multifield-variable&gt;</code></td>
+        </tr>
+    </table>
+</body>
+</html>

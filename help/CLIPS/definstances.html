@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Definstances</title>
+</head>
+
+<body>
+    <h2><a name="definstances">Definstances</a></h2>
+
+    <p>Similar to deffacts, the definstances construct allows the specification of instances which will be created
+    every time the reset command is executed. On every reset all current instances receive a delete message, and the
+    equivalent of a make-instance function call is made for every instance specified in definstances constructs.</p>
+
+    <p>The syntax of the definstances construct is:</p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;definstances-construct&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(definstances &lt;definstances-name&gt; [&lt;comment&gt;]<br>
+            &lt;instance-template&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;instance-template&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(&lt;instance-definition&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;instance-definition&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;instance-name-expression&gt; of<br>
+            &lt;class-name-expression&gt;<br>
+            &lt;slot-override&gt;*</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;slot-override&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(&lt;slot-name-expression&gt; &lt;expression&gt;*)</code></td>
+        </tr>
+    </table>
+</body>
+</html>

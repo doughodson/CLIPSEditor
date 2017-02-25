@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Defclass</title>
+</head>
+
+<body>
+    <h2><a name="defclass">Defclass</a></h2>
+
+    <p>A defclass is a construct for specifying the properties (slots) of a class of objects. A defclass consists of
+    four elements:</p>
+
+    <ul>
+        <li>1) a name,</li>
+
+        <li>2) a list of superclasses from which the new class inherits slots and message-handlers,</li>
+
+        <li>3) a specifier saying whether or not the creation of direct instances of the new class is allowed and</li>
+
+        <li>4) a list of slots specific to the new class.</li>
+    </ul>
+
+    <p>All user-defined classes must inherit from at least one class, and to this end COOL provides predefined system
+    classes for use as a base in the derivation of new classes.</p>
+
+    <p>Any slots explicitly given in the defclass override those gotten from inheritance. COOL applies rules to the
+    list of superclasses to generate a class precedence list for the new class. Facets further describe slots.<br>
+    Some examples of facets include: default value, cardinality, and types of access allowed.</p>
+
+    <p>The syntax of the defclass construct is:</p>
+
+    <p><code>(defclass &lt;name&gt; [&lt;comment&gt;]<br>
+    &nbsp;(is-a &lt;superclass-name&gt;+)<br>
+    &nbsp;[&lt;role&gt;]<br>
+    &nbsp;[&lt;pattern-match-role&gt;]<br>
+    &nbsp;&lt;slot&gt;*<br>
+    &nbsp;&lt;handler-documentation&gt;*)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;role&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(role concrete | abstract)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;pattern-match-role&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(pattern-match reactive | non-reactive)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;slot&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(slot &lt;name&gt; &lt;facet&gt;*) |<br>
+            (single-slot &lt;name&gt; &lt;facet&gt;*) |<br>
+            (multislot &lt;name&gt; &lt;facet&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;default-facet&gt; | &lt;storage-facet&gt; |<br>
+            &lt;access-facet&gt; | &lt;propagation-facet&gt; |<br>
+            &lt;source-facet&gt; | &lt;pattern-match-facet&gt; |<br>
+            &lt;visibility-facet&gt; | &lt;create-accessor-facet&gt;<br>
+            &lt;override-message-facet&gt; | &lt;constraint-attributes&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;default-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(default ?DERIVE | ?NONE | &lt;expression&gt;*) |<br>
+            (default-dynamic &lt;expression&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;storage-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(storage local | shared)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;access-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(access read-write | read-only | initialize-only)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;propagation-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(propagation inherit | no-inherit)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;source-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(source exclusive | composite)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;pattern-match-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(pattern-match reactive | non-reactive)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;visibility-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(visibility private | public)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;create-accessor-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(create-accessor ?NONE | read | write | read-write)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;override-message-facet&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(override-message ?DEFAULT | &lt;message-name&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;handler-documentation&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(message-handler &lt;name&gt; [&lt;handler-type&gt;])</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;handler-type&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>primary | around | before | after</code></td>
+        </tr>
+    </table>
+</body>
+</html>

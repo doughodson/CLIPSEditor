@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Debugging Commands</title>
+</head>
+
+<body>
+    <h2>Debugging Commands</h2>
+
+    <p>The following commands control the CLIPS debugging features.</p>
+
+    <h3><a name="dribble-off">dribble-off</a></h3>
+
+    <p>Closes the trace file.</p>
+
+    <p><code>(dribble-off)</code></p>
+
+    <h3><a name="dribble-on">dribble-on</a></h3>
+
+    <p>Sends trace information to the specified file.</p>
+
+    <p><code>(dribble-on &lt;file-name&gt;)</code></p>
+
+    <h3><a name="list-watch-items">list-watch-items</a></h3>
+
+    <p>Displays the current state of watch items.</p>
+
+    <p><code>(list-watch-items [&lt;watch-item&gt;])</code></p>
+
+    <h3><a name="unwatch">unwatch</a></h3>
+
+    <p>Disables trace information for the specified item.</p>
+
+    <p><code>(unwatch &lt;watch-item&gt;)</code></p>
+
+    <h3><a name="watch">watch</a></h3>
+
+    <p>Enables trace information for the specified item.</p>
+
+    <p><code>(watch &lt;watch-item&gt;)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;watch-item&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>all |<br>
+            compilations |<br>
+            statistics |<br>
+            focus |<br>
+            messages |<br>
+            deffunctions &lt;deffunction-name&gt;* |<br>
+            globals &lt;global-name&gt;* |<br>
+            rules &lt;rule-name&gt;* |<br>
+            activations &lt;rule-name&gt;* |<br>
+            facts &lt;deftemplate-name&gt;* |<br>
+            instances &lt;class-name&gt;* |<br>
+            slots &lt;class-name&gt;* |<br>
+            message-handlers &lt;handler-spec-1&gt;* [&lt;handler-spec-2&gt;]) |<br>
+            generic-functions &lt;generic-name&gt;* |<br>
+            methods &lt;method-spec-1&gt;* [&lt;method-spec-2&gt;]</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;handler-spec-1&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;class-name&gt; &lt;handler-name&gt; &lt;handler-type&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;handler-spec-2&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;class-name&gt; [&lt;handler-name&gt; [&lt;handler-type&gt;]]</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;method-spec-1&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;generic-name&gt; &lt;method-index&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;method-spec-2&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;generic-name&gt; [&lt;method-index&gt;]</code></td>
+        </tr>
+    </table>
+</body>
+</html>

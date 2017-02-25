@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Defgeneric / Defmethod</title>
+</head>
+
+<body>
+    <h2><a name="defgeneric_defmethod">Defgeneric / Defmethod</a></h2>
+
+    <p>With the defgeneric/defmethod constructs, new generic functions may be written directly in CLIPS. Generic
+    functions are similar to deffunctions because they can be used to define new procedural code directly in CLIPS, and
+    they can be called like any other function. However, generic functions are much more powerful because they can do
+    different things depending on the types (or classes) and number of their arguments. For example, a '+' operator
+    could be defined which performs concatenation for strings but still performs arithmetic addition for numbers.
+    Generic functions are comprised of multiple components called methods, where each method handles different cases of
+    arguments for the generic function. A generic function which has more than one method is said to be overloaded. A
+    generic function is comprised of a header (similar to a forward declaration) and zero or more methods. A generic
+    function header can either be explicitly declared by the user or implicitly declared by the definition of at least
+    one method. The defgeneric construct is used to specify the generic function header, and the defmethod construct is
+    used for each of the generic function's methods.</p>
+
+    <p>The syntax of the defgeneric/defmethod constructs is:</p>
+
+    <p><code>(defgeneric &lt;name&gt; [&lt;comment&gt;])</code></p>
+
+    <p><code>(defmethod &lt;name&gt; [&lt;index&gt;] [&lt;comment&gt;]<br>
+    &nbsp;(&lt;parameter-restriction&gt;* [&lt;wildcard-parameter&gt;])<br>
+    &nbsp;&lt;action&gt;*)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;parameter-restriction&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;single-field-variable&gt; |<br>
+            (&lt;single-field-variable&gt; &lt;type&gt;* [&lt;query&gt;])</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;wildcard-parameter&gt; <code>&nbsp;</code></code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;multifield-variable&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;type&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;class-name&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;query&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;global-variable&gt; | &lt;function-call&gt;</code></td>
+        </tr>
+    </table>
+</body>
+</html>

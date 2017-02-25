@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>CLIPS</namespace>
+    <virtualFolder>doc</virtualFolder>
+    <filterSection>
+        <toc>
+            <section title="CLIPS Help" ref="index.html">
+                <section title="Command Summary" ref="command_summary.html">
+                    <section title="Agenda Commands" ref="agenda_commands.html"></section> 
+                    <section title="Cool Commands" ref="cool_commands.html">
+                        <section title="Cass Commands" ref="cool_class_commands.html"></section> 
+                        <section title="Definstances Commands" ref="cool_definstances_commands.html"></section> 
+                        <section title="Instances Commands" ref="cool_instances_commands.html"></section> 
+                        <section title="Message Handler Commands" ref="cool_message_handler_commands.html"></section> 
+                    </section> 
+                    <section title="Debugging Commands" ref="debugging_commands.html"></section> 
+                    <section title="Deffacts Commands" ref="deffacts_commands.html"></section> 
+                    <section title="Deffunction Commands" ref="deffunction_commands.html"></section> 
+                    <section title="Defglobal Commands" ref="defglobal_commands.html"></section>
+                    <section title="Defmodule Commands" ref="defmodule_commands.html"></section> 
+                    <section title="Defrule Commands" ref="defrule_commands.html"></section> 
+                    <section title="Deftemplate Commands" ref="deftemplate_commands.html"></section> 
+                    <section title="Environment Commands" ref="environment_commands.html"></section> 
+                    <section title="Fact Commands" ref="fact_commands.html"></section> 
+                    <section title="Generic Function Commands" ref="generic_function_commands.html"></section> 
+                    <section title="Memory Commands" ref="memory_commands.html"></section> 
+                    <section title="Text Processing Commands" ref="text_processing_commands.html"></section> 
+                    <section title="Profiling Commands" ref="profiling_commands.html"></section> 
+                </section>
+                <section title="Construct Summary" ref="construct_summary.html">
+                    <section title="Constraint Attributes" ref="constraint_attributes.html"></section> 
+                    <section title="Defclass" ref="defclass.html"></section> 
+                    <section title="Deffacts" ref="deffacts.html"></section> 
+                    <section title="Deffunction" ref="deffunction.html"></section> 
+                    <section title="Defgeneric / Defmethod" ref="defgeneric_defmethod.html"></section> 
+                    <section title="Defglobal" ref="defglobal.html"></section> 
+                    <section title="Definstances" ref="definstances.html"></section> 
+                    <section title="Defmessage-Handler" ref="defmessage_handler.html"></section> 
+                    <section title="Defmodule" ref="defmodule.html"></section> 
+                    <section title="Defrule" ref="defrule.html"></section> 
+                    <section title="Deftemplate" ref="deftemplate.html"></section> 
+                </section>
+                <section title="Function Summary" ref="function_summary.html"> 
+                    <section title="Agenda Functions" ref="agenda_functions.html"></section> 
+                    <section title="Cool Functions" ref="cool_functions.html">
+                        <section title="Class Functions" ref="cool_class_functions.html"></section> 
+                        <section title="Message-Handler Functions" ref="cool_message_handler_functions.html"></section> 
+                        <section title="Definstances Functions" ref="cool_definstances_functions.html"></section> 
+                        <section title="Instance Manipulation Functions" ref="cool_instance_manipulation_functions.html"></section> 
+                        <section title="Instance Slot Functions" ref="cool_instance_slot_functions.html"></section> 
+                        <section title="Instance Predicate Functions" ref="cool_instance_predicate_functions.html"></section> 
+                    </section>
+                    <section title="Deffunction Functions" ref="deffunction_functions.html"></section> 
+                    <section title="Defglobal Functions" ref="defglobal_functions.html"></section>
+                    <section title="Defmodule Functions" ref="defmodule_functions.html"></section> 
+                    <section title="Defrule Functions" ref="defrule_functions.html"></section> 
+                    <section title="Deftemplate Functions" ref="deftemplate_functions.html"></section> 
+                    <section title="Fact Functions" ref="fact_functions.html"></section> 
+                    <section title="Generic Functions" ref="generic_function.html"></section> 
+                    <section title="IO Functions" ref="io_functions.html"></section> 
+                    <section title="Math Functions" ref="math_functions.html"></section> 
+                    <section title="Miscellaneous Functions" ref="miscellaneous_functions.html"></section> 
+                    <section title="Multifield Functions" ref="multifield_functions.html"></section> 
+                    <section title="Predicate Functions" ref="predicate_functions.html"></section> 
+                    <section title="Procedural Functions" ref="procedural_functions.html"></section> 
+                    <section title="Sequence Expansion Functions" ref="sequence_expansion_functions.html"></section> 
+                    <section title="String Functions" ref="string_functions.html"></section> 
+                </section>
+                <section title="Help Usage" ref="help_usage.html"></section> 
+                <section title="Release Notes" ref="release_notes.html"></section> 
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="agenda" ref="agenda_commands.html#agenda"/>
+            <keyword name="clear-focus-stack" ref="agenda_commands.html#clear-focus-stack"/>
+            <keyword name="focus" ref="agenda_commands.html#focus"/>
+            <keyword name="get-salience-evaluation" ref="agenda_commands.html#get-salience-evaluation"/>
+            <keyword name="get-strategy" ref="agenda_commands.html#get-strategy"/>
+            <keyword name="halt" ref="agenda_commands.html#halt"/>
+            <keyword name="list-focus-stack" ref="agenda_commands.html#list-focus-stack"/>
+            <keyword name="refresh-agenda" ref="agenda_commands.html#refresh-agenda"/>
+            <keyword name="run" ref="agenda_commands.html#run"/>
+            <keyword name="set-salience-evaluation" ref="agenda_commands.html#set-salience-evaluation"/>
+            <keyword name="set-strategy" ref="agenda_commands.html#set-strategy"/>
+            <keyword name="get-focus" ref="agenda_functions.html#get-focus"/>
+            <keyword name="get-focus-stack" ref="agenda_functions.html#get-focus-stack"/>
+            <keyword name="pop-focus" ref="agenda_functions.html#pop-focus"/>
+            <keyword name="browse-classes" ref="cool_class_commands.html#browse-classes"/>
+            <keyword name="describe-class" ref="cool_class_commands.html#describe-class"/>
+            <keyword name="list-defclasses" ref="cool_class_commands.html#list-defclasses"/>
+            <keyword name="ppdefclass" ref="cool_class_commands.html#ppdefclass"/>
+            <keyword name="undefclass" ref="cool_class_commands.html#undefclass"/>
+            <keyword name="class-abstractp" ref="cool_class_functions.html#class-abstractp"/>
+            <keyword name="class-existp" ref="cool_class_functions.html#class-existp"/>
+            <keyword name="class-reactivep" ref="cool_class_functions.html#class-reactivep"/>
+            <keyword name="class-slots" ref="cool_class_functions.html#class-slots"/>
+            <keyword name="class-subclasses" ref="cool_class_functions.html#class-subclasses"/>
+            <keyword name="class-superclasses" ref="cool_class_functions.html#class-superclasses"/>
+            <keyword name="dribble-off" ref="debugging_commands.html#dribble-off"/> 
+            <keyword name="dribble-on" ref="debugging_commands.html#dribble-on"/> 
+            <keyword name="list-watch-items" ref="debugging_commands.html#list-watch-items"/> 
+            <keyword name="unwatch" ref="debugging_commands.html#unwatch"/> 
+            <keyword name="watch" ref="debugging_commands.html#watch"/> 
+            <keyword name="defclass" ref="defclass.html#defclass"/>
+            <keyword name="deffacts" ref="deffacts.html#deffacts"/>
+            <keyword name="deffunction" ref="deffunction.html#deffunction"/>
+            <keyword name="defgeneric" ref="defgeneric_defmethod.html#defgeneric_defmethod"/>
+            <keyword name="defmethod" ref="defgeneric_defmethod.html#defgeneric_defmethod"/>
+            <keyword name="defglobal" ref="defglobal.html#defglobal"/>
+            <keyword name="definstances" ref="definstances.html#definstances"/>
+            <keyword name="defmessage-handler" ref="defmessage_handler.html#defmessage-handler"/>
+            <keyword name="definstances" ref="definstances.html#definstances"/>
+            <keyword name="defmodule" ref="defmodule.html#defmodule"/>
+            <keyword name="defrule" ref="defrule.html#defrule"/>
+            <keyword name="deftemplate" ref="deftemplate.html#deftemplate"/>
+            <keyword name="defclass-module" ref="cool_class_functions.html#defclass-module"/>
+            <keyword name="get-class-defaults-mode" ref="cool_class_functions.html#get-class-defaults-mode"/>
+            <keyword name="get-defclass-list" ref="cool_class_functions.html#get-defclass-list"/>
+            <keyword name="get-defmessage-handler-list" ref="cool_class_functions.html#get-defmessage-handler-list"/>
+            <keyword name="message-handler-existp" ref="cool_class_functions.html#message-handler-existp"/>
+            <keyword name="set-class-defaults-mode" ref="cool_class_functions.html#set-class-defaults-mode"/>
+            <keyword name="slot-allowed-classes" ref="cool_class_functions.html#slot-allowed-classes"/>
+            <keyword name="slot-allowed-values" ref="cool_class_functions.html#slot-allowed-values"/>
+            <keyword name="slot-cardinality" ref="cool_class_functions.html#slot-cardinality"/>
+            <keyword name="slot-default-value" ref="cool_class_functions.html#slot-default-value"/>
+            <keyword name="slot-direct-accessp" ref="cool_class_functions.html#slot-direct-accessp"/>
+            <keyword name="slot-existp" ref="cool_class_functions.html#slot-existp"/>
+            <keyword name="slot-facets" ref="cool_class_functions.html#slot-facets"/>
+            <keyword name="slot-initablep" ref="cool_class_functions.html#slot-initablep"/>
+            <keyword name="slot-publicp" ref="cool_class_functions.html#slot-publicp"/>
+            <keyword name="slot-range" ref="cool_class_functions.html#slot-range"/>
+            <keyword name="slot-sources" ref="cool_class_functions.html#slot-sources"/>
+            <keyword name="slot-types" ref="cool_class_functions.html#slot-types"/>
+            <keyword name="slot-writablep" ref="cool_class_functions.html#slot-writablep"/>
+            <keyword name="subclassp" ref="cool_class_functions.html#subclassp"/>
+            <keyword name="superclassp" ref="cool_class_functions.html#superclassp"/>
+            <keyword name="list-definstances" ref="cool_definstances_commands.html#list-definstances"/>
+            <keyword name="ppdefinstances" ref="cool_definstances_commands.html#ppdefinstances"/>
+            <keyword name="undefinstances" ref="cool_definstances_commands.html#undefinstances"/>
+            <keyword name="definstances-module" ref="cool_definstances_functions.html#definstances-module"/>
+            <keyword name="get-definstances-list" ref="cool_definstances_functions.html#get-definstances-list"/>
+            <keyword name="class" ref="cool_instance_manipulation_functions.html#class"/>
+            <keyword name="delete-instance" ref="cool_instance_manipulation_functions.html#delete-instance"/>
+            <keyword name="init-slots" ref="cool_instance_manipulation_functions.html#init-slots"/>
+            <keyword name="instance-address" ref="cool_instance_manipulation_functions.html#instance-address"/>
+            <keyword name="instance-name" ref="cool_instance_manipulation_functions.html#instance-name"/>
+            <keyword name="instance-name-to-symbol" ref="cool_instance_manipulation_functions.html#instance-name-to-symbol"/>
+            <keyword name="symbol-to-instance-name" ref="cool_instance_manipulation_functions.html#symbol-to-instance-name"/>
+            <keyword name="unmake-instance" ref="cool_instance_manipulation_functions.html#unmake-instance"/>
+            <keyword name="instance-addressp" ref="cool_instance_predicate_functions.html#instance-addressp"/>
+            <keyword name="instance-existp" ref="cool_instance_predicate_functions.html#instance-existp"/>
+            <keyword name="instance-namep" ref="cool_instance_predicate_functions.html#instance-namep"/>
+            <keyword name="instancep" ref="cool_instance_predicate_functions.html#instancep"/>
+            <keyword name="direct-slot-delete$" ref="cool_instance_slot_functions.html#direct-slot-delete$"/>
+            <keyword name="direct-slot-insert$" ref="cool_instance_slot_functions.html#direct-slot-insert$"/>
+            <keyword name="direct-slot-replace$" ref="cool_instance_slot_functions.html#direct-slot-replace$"/>
+            <keyword name="dynamic-get" ref="cool_instance_slot_functions.html#dynamic-get"/>
+            <keyword name="dynamic-put" ref="cool_instance_slot_functions.html#dynamic-put"/>
+            <keyword name="slot-delete$" ref="cool_instance_slot_functions.html#slot-delete$"/>
+            <keyword name="slot-insert$" ref="cool_instance_slot_functions.html#slot-insert$"/>
+            <keyword name="slot-replace$" ref="cool_instance_slot_functions.html#slot-replace$"/>
+            <keyword name="instances" ref="cool_instances_commands.html#instances"/>
+            <keyword name="load-instances" ref="cool_instances_commands.html#load-instances"/>
+            <keyword name="ppinstance" ref="cool_instances_commands.html#ppinstance"/>
+            <keyword name="restore-instances" ref="cool_instances_commands.html#restore-instances"/>
+            <keyword name="save-instances" ref="cool_instances_commands.html#save-instances"/>
+            <keyword name="list-defmessage-handlers" ref="cool_message_handler_commands.html#list-defmessage-handlers"/>
+            <keyword name="ppdefmessage-handler" ref="cool_message_handler_commands.html#ppdefmessage-handler"/>
+            <keyword name="preview-send" ref="cool_message_handler_commands.html#preview-send"/>
+            <keyword name="undefmessage-handler" ref="cool_message_handler_commands.html#undefmessage-handler"/>
+            <keyword name="call-next-handler" ref="cool_message_handler_functions.html#call-next-handler"/>
+            <keyword name="next-handlerp" ref="cool_message_handler_functions.html#next-handlerp"/>
+            <keyword name="override-next-handler" ref="cool_message_handler_functions.html#override-next-handler"/>
+            <keyword name="ppdeffacts" ref="deffacts_commands.html#ppdeffacts"/>
+            <keyword name="list-deffacts" ref="deffacts_commands.html#list-deffacts"/>
+            <keyword name="undeffacts" ref="deffacts_commands.html#undeffacts"/>
+            <keyword name="list-deffunctions" ref="deffunction_commands.html#list-deffunctions"/>
+            <keyword name="ppdeffunction" ref="deffunction_commands.html#ppdeffunction"/>
+            <keyword name="undeffunction" ref="deffunction_commands.html#undeffunction"/>
+            <keyword name="get-deffunction-list" ref="deffunction_functions.html#get-deffunction-list"/>
+            <keyword name="deffunction-module" ref="deffunction_functions.html#deffunction-module"/>
+            <keyword name="get-reset-globals" ref="defglobal_commands.html#get-reset-globals"/>
+            <keyword name="list-defglobals" ref="defglobal_commands.html#list-defglobals"/>
+            <keyword name="ppdefglobal" ref="defglobal_commands.html#ppdefglobal"/>
+            <keyword name="set-reset-globals" ref="defglobal_commands.html#set-reset-globals"/>
+            <keyword name="shows-defglobals" ref="defglobal_commands.html#shows-defglobals"/>
+            <keyword name="undefglobal" ref="defglobal_commands.html#undefglobal"/>
+            <keyword name="get-defglobal-list" ref="defglobal_functions.html#get-defglobal-list"/>
+            <keyword name="defglobal-module" ref="defglobal_functions.html#defglobal-module"/>
+            <keyword name="get-current-module" ref="defmodule_commands.html#get-current-module"/>
+            <keyword name="list-defmodules" ref="defmodule_commands.html#list-defmodules"/>
+            <keyword name="ppdefmodule" ref="defmodule_commands.html#ppdefmodule"/>
+            <keyword name="set-current-module" ref="defmodule_commands.html#set-current-module"/>
+            <keyword name="get-defmodule-list" ref="defmodule_functions.html#get-defmodule-list"/>
+            <keyword name="get-incremental-reset" ref="defrule_commands.html#get-incremental-reset"/>
+            <keyword name="list-defrules" ref="defrule_commands.html#list-defrules"/>
+            <keyword name="matches" ref="defrule_commands.html#matches"/>
+            <keyword name="ppdefrule" ref="defrule_commands.html#ppdefrule"/>
+            <keyword name="refresh" ref="defrule_commands.html#refresh"/>
+            <keyword name="remove-break" ref="defrule_commands.html#remove-break"/>
+            <keyword name="set-break" ref="defrule_commands.html#set-break"/>
+            <keyword name="set-incremental-reset" ref="defrule_commands.html#set-incremental-reset"/>
+            <keyword name="show-breaks" ref="defrule_commands.html#show-breaks"/>
+            <keyword name="undefrule" ref="defrule_commands.html#undefrule"/>
+            <keyword name="get-defrule-list" ref="defrule_functions.html#get-defrule-list"/>
+            <keyword name="defrule-module" ref="defrule_functions.html#defrule-module"/>
+            <keyword name="list-deftemplates" ref="deftemplate_commands.html#list-deftemplates"/>
+            <keyword name="ppdeftemplate" ref="deftemplate_commands.html#ppdeftemplate"/>
+            <keyword name="undeftemplate" ref="deftemplate_commands.html#undeftemplate"/>
+            <keyword name="deftemplate-module" ref="deftemplate_functions.html#deftemplate-module"/>
+            <keyword name="deftemplate-slot-allowed-values" ref="deftemplate_functions.html#deftemplate-slot-allowed-values"/>
+            <keyword name="deftemplate-slot-cardinality" ref="deftemplate_functions.html#deftemplate-slot-cardinality"/>
+            <keyword name="deftemplate-slot-defaultp" ref="deftemplate_functions.html#deftemplate-slot-defaultp"/>
+            <keyword name="deftemplate-slot-default-value" ref="deftemplate_functions.html#deftemplate-slot-default-value"/>
+            <keyword name="deftemplate-slot-existp" ref="deftemplate_functions.html#deftemplate-slot-existp"/>
+            <keyword name="deftemplate-slot-multip" ref="deftemplate_functions.html#deftemplate-slot-multip"/>
+            <keyword name="deftemplate-slot-names" ref="deftemplate_functions.html#deftemplate-slot-names"/>
+            <keyword name="deftemplate-slot-range" ref="deftemplate_functions.html#deftemplate-slot-range"/>
+            <keyword name="deftemplate-slot-singlep" ref="deftemplate_functions.html#deftemplate-slot-singlep"/>
+            <keyword name="deftemplate-slot-types" ref="deftemplate_functions.html#deftemplate-slot-types"/>
+            <keyword name="get-deftemplate-list" ref="deftemplate_functions.html#get-deftemplate-list"/>
+            <keyword name="apropos" ref="environment_commands.html#apropos"/>
+            <keyword name="batch" ref="environment_commands.html#batch"/>
+            <keyword name="batch*" ref="environment_commands.html#batch*"/>
+            <keyword name="bload" ref="environment_commands.html#bload"/>
+            <keyword name="bsave" ref="environment_commands.html#bsave"/>
+            <keyword name="clear" ref="environment_commands.html#clear"/>
+            <keyword name="exit" ref="environment_commands.html#exit"/>
+            <keyword name="get-auto-float-dividend" ref="environment_commands.html#get-auto-float-dividend"/>
+            <keyword name="get-dynamic-constraint-checking" ref="environment_commands.html#get-dynamic-constraint-checking"/>
+            <keyword name="get-static-constraint-checking" ref="environment_commands.html#get-static-constraint-checking"/>
+            <keyword name="load" ref="environment_commands.html#load"/>
+            <keyword name="load*" ref="environment_commands.html#load*"/>
+            <keyword name="options" ref="environment_commands.html#options"/>
+            <keyword name="reset" ref="environment_commands.html#reset"/>
+            <keyword name="save" ref="environment_commands.html#save"/>
+            <keyword name="set-auto-float-dividend" ref="environment_commands.html#set-auto-float-dividend"/>
+            <keyword name="set-dynamic-constraint-checking" ref="environment_commands.html#set-dynamic-constraint-checking"/>
+            <keyword name="set-static-constraint-checking" ref="environment_commands.html#set-static-constraint-checking"/>
+            <keyword name="system" ref="environment_commands.html#system"/>
+            <keyword name="dependencies" ref="fact_commands.html#dependencies"/>
+            <keyword name="dependents" ref="fact_commands.html#dependents"/>
+            <keyword name="facts" ref="fact_commands.html#facts"/>
+            <keyword name="get-fact-duplication" ref="fact_commands.html#get-fact-duplication"/>
+            <keyword name="load-facts" ref="fact_commands.html#load-facts"/>
+            <keyword name="ppfact" ref="fact_commands.html#ppfact"/>
+            <keyword name="save-facts" ref="fact_commands.html#save-facts"/>
+            <keyword name="set-fact-duplication" ref="fact_commands.html#set-fact-duplication"/>
+            <keyword name="assert" ref="fact_functions.html#assert"/>
+            <keyword name="assert-string" ref="fact_functions.html#assert-string"/>
+            <keyword name="duplicate" ref="fact_functions.html#duplicate"/>
+            <keyword name="fact-existp" ref="fact_functions.html#fact-existp"/>
+            <keyword name="fact-index" ref="fact_functions.html#fact-index"/>
+            <keyword name="fact-relation" ref="fact_functions.html#fact-relation"/>
+            <keyword name="fact-slot-names" ref="fact_functions.html#fact-slot-names"/>
+            <keyword name="fact-slot-value" ref="fact_functions.html#fact-slot-value"/>
+            <keyword name="get-fact-list" ref="fact_functions.html#get-fact-list"/>
+            <keyword name="modify" ref="fact_functions.html#modify"/>
+            <keyword name="retract" ref="fact_functions.html#retract"/>
+            <keyword name="call-next-method" ref="generic_function.html#call-next-method"/>
+            <keyword name="call-specific-method" ref="generic_function.html#call-specific-method"/>
+            <keyword name="defgeneric-module" ref="generic_function.html#defgeneric-module"/>
+            <keyword name="get-defgeneric-list" ref="generic_function.html#get-defgeneric-list"/>
+            <keyword name="get-defmethod-list" ref="generic_function.html#get-defmethod-list"/>
+            <keyword name="get-method-restrictions" ref="generic_function.html#get-method-restrictions"/>
+            <keyword name="next-methodp" ref="generic_function.html#next-methodp"/>
+            <keyword name="override-next-method" ref="generic_function.html#override-next-method"/>
+            <keyword name="type" ref="generic_function.html#type"/>
+            <keyword name="list-defgenerics" ref="generic_function_commands.html#list-defgenerics"/>
+            <keyword name="list-defmethods" ref="generic_function_commands.html#list-defmethods"/>
+            <keyword name="ppdefgeneric" ref="generic_function_commands.html#ppdefgeneric"/>
+            <keyword name="ppdefmethod" ref="generic_function_commands.html#ppdefmethod"/>
+            <keyword name="preview-generic" ref="generic_function_commands.html#preview-generic"/>
+            <keyword name="undefgeneric" ref="generic_function_commands.html#undefgeneric"/>
+            <keyword name="undefmethod" ref="generic_function_commands.html#undefmethod"/>
+            <keyword name="close" ref="io_functions.html#close"/>
+            <keyword name="format" ref="io_functions.html#format"/>
+            <keyword name="open" ref="io_functions.html#open"/>
+            <keyword name="printout" ref="io_functions.html#printout"/>
+            <keyword name="read" ref="io_functions.html#read"/>
+            <keyword name="readline" ref="io_functions.html#readline"/>
+            <keyword name="remove" ref="io_functions.html#remove"/>
+            <keyword name="rename" ref="io_functions.html#rename"/>
+            <keyword name="get-char" ref="io_functions.html#get-char"/>
+            <keyword name="read-number" ref="io_functions.html#read-number"/>
+            <keyword name="set-locale" ref="io_functions.html#set-locale"/>
+            <keyword name="+" ref="math_functions.html#+"/>
+            <keyword name="-" ref="math_functions.html#-"/>
+            <keyword name="*" ref="math_functions.html#*"/>
+            <keyword name="/" ref="math_functions.html#/"/>
+            <keyword name="abs" ref="math_functions.html#abs"/>
+            <keyword name="div" ref="math_functions.html#div"/>
+            <keyword name="float" ref="math_functions.html#float"/>
+            <keyword name="integer" ref="math_functions.html#integer"/>
+            <keyword name="max" ref="math_functions.html#max"/>
+            <keyword name="min" ref="math_functions.html#min"/>
+            <keyword name="**" ref="math_functions.html#**"/>
+            <keyword name="deg-grad" ref="math_functions.html#deg-grad"/>
+            <keyword name="deg-rad" ref="math_functions.html#deg-rad"/>
+            <keyword name="exp" ref="math_functions.html#exp"/>
+            <keyword name="grad-deg" ref="math_functions.html#grad-deg"/>
+            <keyword name="log" ref="math_functions.html#log"/>
+            <keyword name="log10" ref="math_functions.html#log10"/>
+            <keyword name="mod" ref="math_functions.html#mod"/>
+            <keyword name="pi" ref="math_functions.html#pi"/>
+            <keyword name="rad-deg" ref="math_functions.html#rad-deg"/>
+            <keyword name="round" ref="math_functions.html#round"/>
+            <keyword name="sqrt" ref="math_functions.html#sqrt"/>
+            <keyword name="acos" ref="math_functions.html#trig"/>
+            <keyword name="acosh" ref="math_functions.html#trig"/>
+            <keyword name="acot" ref="math_functions.html#trig"/>
+            <keyword name="acoth" ref="math_functions.html#trig"/>
+            <keyword name="acsc" ref="math_functions.html#trig"/>
+            <keyword name="acsch" ref="math_functions.html#trig"/>
+            <keyword name="asec" ref="math_functions.html#trig"/>
+            <keyword name="asech" ref="math_functions.html#trig"/>
+            <keyword name="asin" ref="math_functions.html#trig"/>
+            <keyword name="asinh" ref="math_functions.html#trig"/>
+            <keyword name="atan" ref="math_functions.html#trig"/>
+            <keyword name="atanh" ref="math_functions.html#trig"/>
+            <keyword name="cos" ref="math_functions.html#trig"/>
+            <keyword name="cosh" ref="math_functions.html#trig"/>
+            <keyword name="cot" ref="math_functions.html#trig"/>
+            <keyword name="coth" ref="math_functions.html#trig"/>
+            <keyword name="csc" ref="math_functions.html#trig"/>
+            <keyword name="csch" ref="math_functions.html#trig"/>
+            <keyword name="sec" ref="math_functions.html#trig"/>
+            <keyword name="sech" ref="math_functions.html#trig"/>
+            <keyword name="sin" ref="math_functions.html#trig"/>
+            <keyword name="sinh" ref="math_functions.html#trig"/>
+            <keyword name="tan" ref="math_functions.html#trig"/>
+            <keyword name="tanh" ref="math_functions.html#trig"/>
+            <keyword name="conserve-mem" ref="memory_commands.html#conserve-mem"/>
+            <keyword name="mem-requests" ref="memory_commands.html#mem-requests"/>
+            <keyword name="mem-used" ref="memory_commands.html#mem-used"/>
+            <keyword name="release-mem" ref="memory_commands.html#release-mem"/>
+            <keyword name="funcall" ref="miscellaneous_functions.html#funcall"/>
+            <keyword name="gensym*" ref="miscellaneous_functions.html#gensym*"/>
+            <keyword name="gensym" ref="miscellaneous_functions.html#gensym"/>
+            <keyword name="get-function -restrictions" ref="miscellaneous_functions.html#get-function -restrictions"/>
+            <keyword name="length" ref="miscellaneous_functions.html#length"/>
+            <keyword name="random" ref="miscellaneous_functions.html#random"/>
+            <keyword name="seed" ref="miscellaneous_functions.html#seed"/>
+            <keyword name="sort" ref="miscellaneous_functions.html#sort"/>
+            <keyword name="setgen" ref="miscellaneous_functions.html#setgen"/>
+            <keyword name="timer" ref="miscellaneous_functions.html#timer"/>
+            <keyword name="time" ref="miscellaneous_functions.html#time"/>
+            <keyword name="create$" ref="multifield_functions.html#create$"/>
+            <keyword name="delete$" ref="multifield_functions.html#delete$"/>
+            <keyword name="delete-member$" ref="multifield_functions.html#delete-member$"/>
+            <keyword name="explode$" ref="multifield_functions.html#explode$"/>
+            <keyword name="first$" ref="multifield_functions.html#first$"/>
+            <keyword name="implode$" ref="multifield_functions.html#implode$"/>
+            <keyword name="insert$" ref="multifield_functions.html#insert$"/>
+            <keyword name="length$" ref="multifield_functions.html#length$"/>
+            <keyword name="member$" ref="multifield_functions.html#member$"/>
+            <keyword name="nth$" ref="multifield_functions.html#nth$"/>
+            <keyword name="replace$" ref="multifield_functions.html#replace$"/>
+            <keyword name="replace-member$" ref="multifield_functions.html#replace-member$"/>
+            <keyword name="rest$" ref="multifield_functions.html#rest$"/>
+            <keyword name="subseq$" ref="multifield_functions.html#subseq$"/>
+            <keyword name="subsetp" ref="multifield_functions.html#subsetp"/>
+            <keyword name="&lt;" ref="predicate_functions.html#lt"/>
+            <keyword name="&lt;=" ref="predicate_functions.html#lt="/>
+            <keyword name="&lt;>" ref="predicate_functions.html#ltgt"/>
+            <keyword name="=" ref="predicate_functions.html#="/>
+            <keyword name=">" ref="predicate_functions.html#gt"/>
+            <keyword name=">=" ref="predicate_functions.html#gt="/>
+            <keyword name="and" ref="predicate_functions.html#and"/>
+            <keyword name="eq" ref="predicate_functions.html#eq"/>
+            <keyword name="evenp" ref="predicate_functions.html#evenp"/>
+            <keyword name="floatp" ref="predicate_functions.html#floatp"/>
+            <keyword name="integerp" ref="predicate_functions.html#integerp"/>
+            <keyword name="lexemep" ref="predicate_functions.html#lexemep"/>
+            <keyword name="multifieldp" ref="predicate_functions.html#multifieldp"/>
+            <keyword name="neq" ref="predicate_functions.html#neq"/>
+            <keyword name="not" ref="predicate_functions.html#not"/>
+            <keyword name="numberp" ref="predicate_functions.html#numberp"/>
+            <keyword name="oddp" ref="predicate_functions.html#oddp"/>
+            <keyword name="or" ref="predicate_functions.html#or"/>
+            <keyword name="pointerp" ref="predicate_functions.html#pointerp"/>
+            <keyword name="stringp" ref="predicate_functions.html#stringp"/>
+            <keyword name="symbolp" ref="predicate_functions.html#symbolp"/>
+            <keyword name="bind" ref="procedural_functions.html#bind"/>
+            <keyword name="break" ref="procedural_functions.html#break"/>
+            <keyword name="if" ref="procedural_functions.html#if"/>
+            <keyword name="loop-for-count" ref="procedural_functions.html#loop-for-count"/>
+            <keyword name="progn" ref="procedural_functions.html#progn"/>
+            <keyword name="progn$" ref="procedural_functions.html#progn$"/>
+            <keyword name="return" ref="procedural_functions.html#return"/>
+            <keyword name="switch" ref="procedural_functions.html#switch"/>
+            <keyword name="while" ref="procedural_functions.html#while"/>
+            <keyword name="get-profile-percent-threshold" ref="profiling_commands.html#get-profile-percent-threshold"/>
+            <keyword name="profile" ref="profiling_commands.html#profile"/>
+            <keyword name="profile-info" ref="profiling_commands.html#profile-info"/>
+            <keyword name="profile-reset" ref="profiling_commands.html#profile-reset"/>
+            <keyword name="set-profile-percent-threshold" ref="profiling_commands.html#set-profile-percent-threshold"/>
+            <keyword name="expand$" ref="sequence_expansion_functions.html#expand$"/>
+            <keyword name="get-sequence-operator-recognition" ref="sequence_expansion_functions.html#get-sequence-operator-recognition"/>
+            <keyword name="set-sequence-operator-recognition" ref="sequence_expansion_functions.html#set-sequence-operator-recognition"/>
+            <keyword name="build" ref="string_functions.html#build"/>
+            <keyword name="check-syntax" ref="string_functions.html#check-syntax"/>
+            <keyword name="eval" ref="string_functions.html#eval"/>
+            <keyword name="lowcase" ref="string_functions.html#lowcase"/>
+            <keyword name="string-to-field" ref="string_functions.html#string-to-field"/>
+            <keyword name="str-cat" ref="string_functions.html#str-cat"/>
+            <keyword name="str-compare" ref="string_functions.html#str-compare"/>
+            <keyword name="str-index" ref="string_functions.html#str-index"/>
+            <keyword name="str-length" ref="string_functions.html#str-length"/>
+            <keyword name="sub-string" ref="string_functions.html#sub-string"/>
+            <keyword name="sym-cat" ref="string_functions.html#sym-cat"/>
+            <keyword name="upcase" ref="string_functions.html#upcase"/>
+            <keyword name="fetch" ref="text_processing_commands.html#fetch"/>
+            <keyword name="get-region" ref="text_processing_commands.html#get-region"/>
+            <keyword name="print-region" ref="text_processing_commands.html#print-region"/>
+            <keyword name="toss" ref="text_processing_commands.html#toss"/>
+        </keywords>
+        <files>
+            <file>agenda_commands.html</file>
+            <file>agenda_functions.html</file>
+            <file>command_summary.html</file>
+            <file>constraint_attributes.html</file>
+            <file>construct_summary.html</file>
+            <file>cool_class_commands.html</file>
+            <file>cool_class_functions.html</file>
+            <file>cool_commands.html</file>
+            <file>cool_definstances_commands.html</file>
+            <file>cool_definstances_functions.html</file>
+            <file>cool_functions.html</file>
+            <file>cool_instance_manipulation_functions.html</file>
+            <file>cool_instance_predicate_functions.html</file>
+            <file>cool_instance_slot_functions.html</file>
+            <file>cool_instances_commands.html</file>
+            <file>cool_message_handler_commands.html</file>
+            <file>cool_message_handler_functions.html</file>
+            <file>debugging_commands.html</file>
+            <file>defclass.html</file>
+            <file>deffacts.html</file>
+            <file>deffacts_commands.html</file>
+            <file>deffunction.html</file>
+            <file>deffunction_commands.html</file>
+            <file>deffunction_functions.html</file>
+            <file>defgeneric_defmethod.html</file>
+            <file>defglobal.html</file>
+            <file>defglobal_commands.html</file>
+            <file>defglobal_functions.html</file>
+            <file>definstances.html</file>
+            <file>defmessage_handler.html</file>
+            <file>defmodule.html</file>
+            <file>defmodule_commands.html</file>
+            <file>defmodule_functions.html</file>
+            <file>defrule.html</file>
+            <file>defrule_commands.html</file>
+            <file>defrule_functions.html</file>
+            <file>deftemplate.html</file>
+            <file>deftemplate_commands.html</file>
+            <file>deftemplate_functions.html</file>
+            <file>environment_commands.html</file>
+            <file>fact_commands.html</file>
+            <file>fact_functions.html</file>
+            <file>function_summary.html</file>
+            <file>generic_function.html</file>
+            <file>generic_function_commands.html</file>
+            <file>help_usage.html</file>
+            <file>index.html</file>
+            <file>io_functions.html</file>
+            <file>math_functions.html</file>
+            <file>memory_commands.html</file>
+            <file>miscellaneous_functions.html</file>
+            <file>multifield_functions.html</file>
+            <file>predicate_functions.html</file>
+            <file>procedural_functions.html</file>
+            <file>profiling_commands.html</file>
+            <file>release_notes.html</file>
+            <file>sequence_expansion_functions.html</file>
+            <file>string_functions.html</file>
+            <file>text_processing_commands.html</file>
+        </files>
+    </filterSection>
+</QtHelpProject>

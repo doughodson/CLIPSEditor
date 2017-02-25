@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Agenda Commands</title>
+</head>
+
+<body>
+    <h2>Agenda Commands</h2>
+
+    <p>The following commands manipulate the agenda.</p>
+
+    <h3><a name="agenda">agenda</a></h3>
+
+    <p>Displays all activations on the agenda of the specified module.</p>
+
+    <p><code>(agenda [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="clear-focus-stack">clear-focus-stack</a></h3>
+
+    <p>Removes all modules from the focus stack.</p>
+
+    <p><code>(clear-focus-stack)</code></p>
+
+    <h3><a name="focus">focus</a></h3>
+
+    <p>Pushes one or more modules onto the focus stack.</p>
+
+    <p><code>(focus &lt;module-name&gt;+)</code></p>
+
+    <h3><a name="get-salience-evaluation">get-salience-evaluation</a></h3>
+
+    <p>Returns the salience evaluation behavior.</p>
+
+    <p><code>(get-salience-evaluation)</code></p>
+
+    <h3><a name="get-strategy">get-strategy</a></h3>
+
+    <p>Returns the current conflict resolution strategy.</p>
+
+    <p><code>(get-strategy)</code></p>
+
+    <h3><a name="halt">halt</a></h3>
+
+    <p>Stops rule execution.</p>
+
+    <h3><a name="list-focus-stack">list-focus-stack</a></h3>
+
+    <p>Lists all module names on the focus stack.</p>
+
+    <p><code>(list-focus-stack)</code></p>
+
+    <h3><a name="refresh-agenda">refresh-agenda</a></h3>
+
+    <p>Forces reevaluation of salience of rules on the agenda of the specified module.</p>
+
+    <p><code>(refresh-agenda [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="run">run</a></h3>
+
+    <p>Starts execution of rules. Rules fire until agenda is empty or the number of rule firings limit specified by the
+    first argument is reached (infinity if unspecified).</p>
+
+    <p><code>(run [&lt;integer-expression&gt;])</code></p>
+
+    <h3><a name="set-salience-evaluation">set-salience-evaluation</a></h3>
+
+    <p>Sets the salience evaluation behavior.</p>
+
+    <p><code>(set-salience-evaluation &lt;behavior&gt;)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table2">
+        <tr>
+            <td valign="top"><code>&lt;behavior&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>when-defined | when-activated | every-cycle</code></td>
+        </tr>
+    </table>
+
+    <h3><a name="set-strategy">set-strategy</a></h3>
+
+    <p>Sets the current conflict resolution strategy.</p>
+
+    <p><code>(set-strategy &lt;strategy&gt;)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;strategy&gt;</code>;</td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>depth | breadth | simplicity | complexity |<br>
+            lex | mea | random</code></td>
+        </tr>
+    </table>
+</body>
+</html>

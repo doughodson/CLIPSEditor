@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>IO Functions</title>
+</head>
+
+<body>
+    <h2>IO Functions</h2>
+
+    <p>The following functions perform I/O operations.</p>
+
+    <h3><a name="close">close</a></h3>
+
+    <p>Closes a file.</p>
+
+    <p><code>(close [&lt;logical-name&gt;])</code></p>
+
+    <h3><a name="format">format</a></h3>
+
+    <p>Sends formated output to the specified logical name.</p>
+
+    <p><code>(format &lt;logical-name&gt; &lt;string-expression&gt; &lt;expression&gt;*)</code></p>
+
+    <h3><a name="open">open</a></h3>
+
+    <p>Opens a file.</p>
+
+    <p><code>(open &lt;file-name&gt; &lt;logical-name&gt; [&lt;mode&gt;])</code></p>
+
+    <p><code>&lt;mode&gt; ::= "r" | "w" | "r+" | "a" | "wb"</code></p>
+
+    <h3><a name="printout">printout</a></h3>
+
+    <p>Sends unformated output to the specified logical name.</p>
+
+    <p><code>(printout &lt;logical-name&gt; &lt;expresion&gt;*)</code></p>
+
+    <h3><a name="read">read</a></h3>
+
+    <p>Reads a single-field value from the specified logical name.</p>
+
+    <p><code>(read [&lt;logical-name&gt;])</code></p>
+
+    <h3><a name="readline">readline</a></h3>
+
+    <p>Reads an entire line as a string from the specified logical name.</p>
+
+    <p><code>(readline [&lt;logical-name&gt;])</code></p>
+
+    <h3><a name="remove">remove</a></h3>
+
+    <p>Deletes a file.</p>
+
+    <p><code>(remove &lt;file-name&gt;)</code></p>
+
+    <h3><a name="rename">rename</a></h3>
+
+    <p>Changes the name of a file.</p>
+
+    <p><code>(rename &lt;old-file-name&gt; &lt;new-file-name&gt;)</code></p>
+
+    <h3><a name="get-char">get-char</a></h3>
+
+    <p>Allows a single character to be retrieved from a logical name.</p>
+
+    <p><code>(get-char [&lt;logical-name&gt;])</code></p>
+
+    <h3><a name="read-number">read-number</a></h3>
+
+    <p>Allows a user to input a single number using the localized format.</p>
+
+    <p><code>(read-number [&lt;logical-name&gt;])</code></p>
+
+    <h3><a name="set-locale">set-locale</a></h3>
+
+    <p>Allows a locale to be specified for the numeric format behavior of the format and read-number functions.</p>
+
+    <p><code>(set-locale [&lt;locale-string&gt;])</code></p>
+</body>
+</html>

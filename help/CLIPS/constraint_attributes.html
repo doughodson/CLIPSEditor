@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Constraint Attributes</title>
+</head>
+
+<body>
+    <h2>Constraint Attributes</h2>
+
+    <p>Constraint attributes can be associated with deftemplate and defclass slots so that type checking can be
+    performed on slot values when template facts and instances are created. The constraint information is also analyzed
+    for the patterns on the LHS of a rule to determine if the specified constraints prevent the rule from ever
+    firing.</p>
+
+    <p>The syntax for constraint attributes is:</p>
+
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td valign="top"><code>&lt;constraint-attribute&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;type-attribute&gt;&nbsp;|<br>
+            &lt;allowed-constant-attribute&gt; |<br>
+            &lt;range-attribute&gt; |<br>
+            &lt;cardinality-attribute&gt;<br>
+            &lt;default-attribute&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;type-attribute&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(type &lt;type-specification&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;type-specification&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;allowed-type&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;allowed-type&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>SYMBOL | STRING | LEXEME |<br>
+            INTEGER | FLOAT | NUMBER |<br>
+            INSTANCE-NAME | INSTANCE-ADDRESS |<br>
+            INSTANCE |<br>
+            EXTERNAL-ADDRESS | FACT-ADDRESS</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;allowed-constant-attribute&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(allowedsymbols &nbsp;&lt;symbol-list&gt;) |<br>
+            (allowedstrings &lt;string-list&gt;) |<br>
+            (allowed-lexemes &lt;lexeme-list&gt; |<br>
+            (allowedintegers &nbsp;&lt;integer-list&gt;) |<br>
+            (allowedfloats &nbsp;&lt;float-list&gt;) |<br>
+            (allowednumbers &nbsp;&lt;number-list&gt;) |<br>
+            (allowed-instance-names &lt;instance-list&gt;) |<br>
+            (allowedvalues &nbsp;&lt;value-list&gt;) |</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;symbol-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;symbol&gt;+ | ?VARIABLE&nbsp;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;string-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;string&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;lexeme-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;lexeme&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;integer-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;integer&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;float-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;float&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;number-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;number&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;instance-name-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;instance-name&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;value-list&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;constant&gt;+ | ?VARIABLE</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;range-attribute&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(range &lt;range-specification&gt;<br>
+            &nbsp;&lt;range-specification&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;cardinality-attribute&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(cardinality &lt;cardinality-specification&gt;<br>
+            &nbsp;&lt;cardinality-specification&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;cardinality-specification&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;integer&gt; | ?VARIABLE</code></td>
+        </tr>
+    </table>
+</body>
+</html>

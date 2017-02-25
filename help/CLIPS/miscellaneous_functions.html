@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Miscellaneous Functions</title>
+</head>
+
+<body>
+    <h2>Miscellaneous Functions</h2>
+
+    <p>The following are additional functions for use within CLIPS.</p>
+
+    <h3><a name="funcall">funcall</a></h3>
+
+    <p>Constructs a function call from its arguments and then evaluates the function call.</p>
+
+    <p><code>(funcall (function-name&gt; &lt;expression&gt;*)</code></p>
+
+    <h3><a name="gensym*">gensym*</a></h3>
+
+    <p>Returns a special unique sequenced symbol.</p>
+
+    <p><code>(gensym*)</code></p>
+
+    <h3><a name="gensym">gensym</a></h3>
+
+    <p>Returns a special sequenced symbol.</p>
+
+    <p><code>(gensym)</code></p>
+
+    <h3><a name="get-function -restrictions">get-function -restrictions</a></h3>
+
+    <p>Returns the restriction string associated with a CLIPS or user defined function.</p>
+
+    <p><code>(get-function-restrictions &lt;function-name&gt;)</code></p>
+
+    <h3><a name="length">length</a></h3>
+
+    <p>Returns an integer for the number of fields in a multifield value or the length in characters of a string or
+    symbol.</p>
+
+    <p><code>(length &lt;lexeme-or-multifield-expression&gt;)</code></p>
+
+    <h3><a name="random">random</a></h3>
+
+    <p>Returns a "random" integer value.</p>
+
+    <p><code>(random [&lt;start-integer-expression&gt; &lt;end-integer-expression&gt;])</code></p>
+
+    <h3><a name="seed">seed</a></h3>
+
+    <p>Seeds the random number generator used by random.</p>
+
+    <p><code>(seed &lt;integer-expression&gt;)</code></p>
+
+    <h3><a name="sort">sort</a></h3>
+
+    <p>Allows a list of values to be sorted based on a user specified comparison function.</p>
+
+    <p><code>(sort &lt;comparison-function-name&gt; &lt;expression&gt;*)</code></p>
+
+    <h3><a name="setgen">setgen</a></h3>
+
+    <p>Sets the starting number used by gensym and gensym*.</p>
+
+    <p><code>(setgen &lt;integer-expression&gt;)</code></p>
+
+    <h3><a name="timer">timer</a></h3>
+
+    <p>Returns the number of seconds elapsed evaluating a series of expressions.</p>
+
+    <p><code>(timer &lt;expression&gt;*)</code></p>
+
+    <h3><a name="time">time</a></h3>
+
+    <p>Returns a float representing the elapsed seconds since the system reference time.</p>
+
+    <p><code>(time)</code></p>
+</body>
+</html>

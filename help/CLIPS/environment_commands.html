@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Environment Commands</title>
+</head>
+
+<body>
+    <h2>Environment Commands</h2>
+
+    <p>The following commands control the CLIPS environment.</p>
+
+    <h3><a name="apropos">apropos</a></h3>
+
+    <p>Displays all symbols currently defined in CLIPS which contain a specified substring.</p>
+
+    <p><code>(apropos &lt;lexeme&gt;)</code></p>
+
+    <h3><a name="batch">batch</a></h3>
+
+    <p>Executes commands from a file.</p>
+
+    <p><code>(batch &lt;file-name&gt;)</code></p>
+
+    <h3><a name="batch*">batch*</a></h3>
+
+    <p>Executes commands from a file. Unlike the batch command, evaluates all of the commands in the specified file
+    before returning rather than replacing standard input.</p>
+
+    <p><code>(batch* &lt;file-name&gt;)</code></p>
+
+    <h3><a name="bload">bload</a></h3>
+
+    <p>Loads a binary image from a file.</p>
+
+    <p><code>(bload &lt;file-name&gt;)</code></p>
+
+    <h3><a name="bsave">bsave</a></h3>
+
+    <p>Saves a binary image to a file.</p>
+
+    <p><code>(bsave &lt;file-name&gt;)</code></p>
+
+    <h3><a name="clear">clear</a></h3>
+
+    <p>Clears the CLIPS environment.</p>
+
+    <p><code>(clear)</code></p>
+
+    <h3><a name="exit">exit</a></h3>
+
+    <p>Exits the CLIPS environment.</p>
+
+    <p><code>(exit)</code></p>
+
+    <h3><a name="get-auto-float-dividend">get-auto-float-dividend</a></h3>
+
+    <p>Returns the current value of the auto-float dividend behaviour.</p>
+
+    <p><code>(get-auto-float-dividend)</code></p>
+
+    <h3><a name="get-dynamic-constraint-checking">get-dynamic-constraint-checking</a></h3>
+
+    <p>Returns the current value of the dynamic constraint checking behaviour.</p>
+
+    <p><code>(get-dynamic-constraint-checking)</code></p>
+
+    <h3><a name="get-static-constraint-checking">get-static-constraint-checking</a></h3>
+
+    <p>Returns the current value of the static constraint checking behaviour.</p>
+
+    <p><code>(get-static-constraint-checking)</code></p>
+
+    <h3><a name="load">load</a></h3>
+
+    <p>Loads constructs from a file.</p>
+
+    <p><code>(load &lt;file-name&gt;)</code></p>
+
+    <h3><a name="load*">load*</a></h3>
+
+    <p>Loads constructs from a file without displaying messages.</p>
+
+    <p><code>(load* &lt;file-name&gt;)</code></p>
+
+    <h3><a name="options">options</a></h3>
+
+    <p>Lists the settings of CLIPS compiler flags.</p>
+
+    <p><code>(options)</code></p>
+
+    <h3><a name="reset">reset</a></h3>
+
+    <p>Resets the CLIPS environment.</p>
+
+    <p><code>(reset)</code></p>
+
+    <h3><a name="save">save</a></h3>
+
+    <p>Saves constructs to a file.</p>
+
+    <p><code>(save &lt;file-name&gt;)</code></p>
+
+    <h3><a name="set-auto-float-dividend">set-auto-float-dividend</a></h3>
+
+    <p>Sets the auto-float dividend behaviour.</p>
+
+    <p><code>(set-auto-float-dividend &lt;boolean-expression&gt;)</code></p>
+
+    <h3><a name="set-dynamic-constraint-checking">set-dynamic-constraint-checking</a></h3>
+
+    <p>Sets the dynamic constraint checking behaviour.</p>
+
+    <p><code>(set-dynamic-constraint-checking &lt;boolean-expression&gt;)</code></p>
+
+    <h3><a name="set-static-constraint-checking">set-static-constraint-checking</a></h3>
+
+    <p>Sets the static constraint checking behaviour.</p>
+
+    <p><code>(set-static-constraint-checking &lt;boolean-expression&gt;)</code></p>
+
+    <h3><a name="system">system</a></h3>
+
+    <p>Appends its arguments together to form a command which is then sent to the operating system.</p>
+
+    <p><code>(system &lt;lexeme-expression&gt;*)</code></p>
+</body>
+</html>

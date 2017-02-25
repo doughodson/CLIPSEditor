@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Defmodule</title>
+</head>
+
+<body>
+    <h2><a name="defmodule">Defmodule</a></h2>
+
+    <p>CLIPS provides support for the modular development and execution of knowledge bases with the defmodule
+    construct. CLIPS modules allow a set of constructs to be grouped together such that explicit control can be
+    maintained over restricting the access of the constructs by other modules. This type of control is similar to
+    global and local scoping used in languages such as C or Ada. By restricting access to deftemplate and defclass
+    constructs, modules can function as blackboards, permitting only certain facts and instances to be seen by other
+    modules. Modules are also used by rules to provide execution control.</p>
+
+    <p>The syntax of the defmodule construct is:</p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;defmodule-construct&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(defmodule &lt;module-name&gt; [&lt;comment&gt;]<br>
+            &lt;port-spec&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;port-specification&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(export &lt;port-item&gt;) |<br>
+            (import &lt;module-name&gt;<br>
+            &lt;port-item&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;port-item&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>?ALL |<br>
+            ?NONE |<br>
+            &lt;port-construct&gt; ?ALL |<br>
+            &lt;port-construct&gt; ?NONE |<br>
+            &lt;port-construct&gt; &lt;construct-name&gt;+</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;port-construct&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>deftemplate | defclass |<br>
+            defglobal |<br>
+            deffunction | defgeneric</code></td>
+        </tr>
+    </table>
+</body>
+</html>

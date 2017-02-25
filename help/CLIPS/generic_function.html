@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Generic Functions</title>
+</head>
+
+<body>
+    <h2>Generic Functions</h2>
+
+    <p>The following functions provide ancillary capabilities for generic function methods.</p>
+
+    <h3><a name="call-next-method">call-next-method</a></h3>
+
+    <p>Calls the next shadowed method.</p>
+
+    <p><code>(call-next-method)</code></p>
+
+    <h3><a name="call-specific-method">call-specific-method</a></h3>
+
+    <p>Calls a particular method of a generic function without regards to method precedence.</p>
+
+    <p><code>(call-specific-method &lt;generic-function&gt; &lt;method-index&gt; &lt;expression&gt;*)</code></p>
+
+    <h3><a name="defgeneric-module">defgeneric-module</a></h3>
+
+    <p>Returns the module in which the specified defgeneric is defined.</p>
+
+    <p><code>(defgeneric-module &lt;defgeneric-name&gt;)</code></p>
+
+    <h3><a name="get-defgeneric-list">get-defgeneric-list</a></h3>
+
+    <p>Returns the list of all defgenerics in the specified module (or the current module if unspecified).</p>
+
+    <p><code>(get-defgeneric-list [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="get-defmethod-list">get-defmethod-list</a></h3>
+
+    <p>Returns the list of all defmethods in the current module (or just the methods associated with the specified
+    defgeneric).</p>
+
+    <p><code>(get-defmethod-list [&lt;defgeneric-name&gt;])</code></p>
+
+    <h3><a name="get-method-restrictions">get-method-restrictions</a></h3>
+
+    <p>Returns a multifield value containing information about the restrictions for the specified method.</p>
+
+    <p><code>(get-method-restrictions &lt;generic-function-name&gt; &lt;method-index&gt;)</code></p>
+
+    <h3><a name="next-methodp">next-methodp</a></h3>
+
+    <p>If called from a method for a generic function, the function next-methodp will return the symbol TRUE if there
+    is another method shadowed by the current one. Otherwise, the function will return the symbol FALSE.</p>
+
+    <p><code>(next-methodp)</code></p>
+
+    <h3><a name="override-next-method">override-next-method</a></h3>
+
+    <p>Calls the next shadowed method allowing new arguments to be provided.</p>
+
+    <p><code>(override-next-method &lt;expression&gt;*)</code></p>
+
+    <h3><a name="type">type</a></h3>
+
+    <p>Returns a symbol which is the name of the type (or class) of its of argument.</p>
+
+    <p><code>(type &lt;expression&gt;)</code></p>
+</body>
+</html>

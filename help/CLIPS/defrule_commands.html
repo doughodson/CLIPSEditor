@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Defrule Commands</title>
+</head>
+
+<body>
+    <h2>Defrule Commands</h2>
+
+    <p>The following commands manipulate defrules.</p>
+
+    <h3><a name="get-incremental-reset">get-incremental-reset</a></h3>
+
+    <p>Returns the incremental reset behavior.</p>
+
+    <p><code>(get-incremental-reset)</code></p>
+
+    <h3><a name="list-defrules">list-defrules</a></h3>
+
+    <p>Displays the list of all defrules in the specified module (or the current module if none specified).</p>
+
+    <p><code>(list-defrules [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="matches">matches</a></h3>
+
+    <p>Displays the facts which match the patterns of a rule.</p>
+
+    <p><code>(matches &lt;rule-name&gt;)</code></p>
+
+    <h3><a name="ppdefrule">ppdefrule</a></h3>
+
+    <p>Displays the text of a given rule.</p>
+
+    <p><code>(ppdefrule &lt;rule-name&gt;)</code></p>
+
+    <h3><a name="refresh">refresh</a></h3>
+
+    <p>Places all current activations of a rule on the agenda.</p>
+
+    <p><code>(refresh &lt;rule-name&gt;)</code></p>
+
+    <h3><a name="remove-break">remove-break</a></h3>
+
+    <p>Removes a breakpoint on a rule.</p>
+
+    <p><code>(remove-break [&lt;rule-name&gt;])</code></p>
+
+    <h3><a name="set-break">set-break</a></h3>
+
+    <p>Sets a breakpoint on a rule.</p>
+
+    <p><code>(set-break &lt;rule-name&gt;)</code></p>
+
+    <h3><a name="set-incremental-reset">set-incremental-reset</a></h3>
+
+    <p>Sets the incremental reset behavior.</p>
+
+    <p><code>(set-incremental-reset &lt;boolean-expression&gt;)</code></p>
+
+    <h3><a name="show-breaks">show-breaks</a></h3>
+
+    <p>Displays all rules having breakpoints.</p>
+
+    <p><code>(show-breaks [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="undefrule">undefrule</a></h3>
+
+    <p>Deletes a defrule.</p>
+
+    <p><code>(undefrule &lt;rule-name&gt;)</code></p>
+</body>
+</html>

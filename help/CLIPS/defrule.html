@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Defrule</title>
+</head>
+
+<body>
+    <h2><a name="defrule">Defrule</a></h2>
+
+    <p>One of the primary methods of representing knowledge in CLIPS is a rule. A rule is a collection of conditions
+    and the actions to be taken if the conditions are met. The developer of an expert system defines the rules which
+    describe how to solve a problem. Rules execute (or fire) based on the existence or non-existence of facts. CLIPS
+    provides the mechanism (the inference engine) which attempts to match the rules to the current state of the system
+    (as represented by the fact-list) and applies the actions.</p>
+
+    <p><code>(defrule &lt;rule-name&gt; [&lt;comment&gt;]<br>
+    &nbsp;&nbsp;[&lt;declaration&gt;]<br>
+    &nbsp;&nbsp;&lt;conditional-element&gt;*<br>
+    &nbsp;=&gt;<br>
+    &nbsp;&nbsp;&lt;action&gt;*)</code></p>
+
+    <h3>Declarations</h3>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;declaration&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(declare &lt;rule-property&gt;+)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;rule-property&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(salience &lt;integer-expression&gt;) |<br>
+            (auto-focus &lt;boolean-symbol&gt;)</code></td>
+        </tr>
+    </table>
+
+    <h3>Conditional Elements</h3>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table2">
+        <tr>
+            <td valign="top"><code>&lt;conditional-element&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;pattern-CE&gt; | &lt;assigned-pattern-CE&gt; |<br>
+            &lt;not-CE&gt; | &lt;and-CE&gt; | &lt;or-CE&gt; |<br>
+            &lt;logical-CE&gt; | &lt;test-CE&gt; |<br>
+            &lt;exists-CE&gt; | &lt;forall-CE&gt;<br></code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;test-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(test &lt;function-call&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;not-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(not &lt;conditional-element&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;and-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(and &lt;conditional-element&gt;+)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;or-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(or &lt;conditional-element&gt;+)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;exists-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(exists &lt;conditional-element&gt;+)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;forall-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(forall &lt;conditional-element&gt;<br>
+            &nbsp;&lt;conditional-element&gt;+)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;logical-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(logical &lt;conditional-element&gt;+)</code></td>
+        </tr>
+    </table>
+
+    <h3>Pattern Conditional Element</h3>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table3">
+        <tr>
+            <td valign="top"><code>&lt;assigned-pattern-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>?&lt;variable-symbol&gt; &lt;- &lt;pattern-CE&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;pattern-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;ordered-pattern-CE&gt; |<br>
+            &lt;template-pattern-CE&gt; |<br>
+            &lt;object-pattern-CE&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;ordered-pattern-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(&lt;symbol&gt; &lt;constraint&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;template-pattern-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(&lt;deftemplate-name &lt;LHS-slot&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;object-pattern-CE&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(object &lt;attribute-constraint&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;attribute-constraint&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(is-a &lt;constraint&gt;) |<br>
+            (name &lt;constraint&gt;) |<br>
+            (&lt;slot-name&gt; &lt;constraint&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;LHS-slot&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;single-field-LHS-slot&gt; |<br>
+            &lt;multifield-LHS-slot&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;LHS-slot&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;single-field-LHS-slot&gt; |<br>
+            &lt;multifield-LHS-slot&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;single-field-LHS-slot&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(&lt;slot-name&gt; &lt;constraint&gt;)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;multifield-LHS-slot&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(&lt;slot-name&gt; &lt;constraint&gt;*)</code></td>
+        </tr>
+    </table>
+
+    <h3>Pattern Constraints</h3>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table4">
+        <tr>
+            <td valign="top"><code>&lt;constraint&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>? | $? | &lt;connected-constraint&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;connected-constraint&gt; <code>&nbsp;</code></code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;single-constraint&gt; |<br>
+            &lt;single-constraint&gt; &amp; &lt;connected-constraint&gt; |<br>
+            &lt;single-constraint&gt; | &lt;connected-constraint&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;single-constraint&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;term&gt; | ~&lt;term&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;term&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;constant&gt; |<br>
+            &lt;single-field-variable&gt; |<br>
+            &lt;multifield-variable&gt; |<br>
+            :&lt;function-call&gt; |<br>
+            =&lt;function-call&gt;</code></td>
+        </tr>
+    </table>
+</body>
+</html>

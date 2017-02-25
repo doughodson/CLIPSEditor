@@ -1,0 +1,1 @@
+lupdate -no-obsolete ../clipseditor.pro -ts clipseditor_ru.ts

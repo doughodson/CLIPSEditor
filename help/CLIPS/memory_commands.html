@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Memory Commands</title>
+</head>
+
+<body>
+    <h2>Memory Commands</h2>
+
+    <p>The following commands display CLIPS memory status information.</p>
+
+    <h3><a name="conserve-mem">conserve-mem</a></h3>
+
+    <p>Turns on or off the storage of information used for the save and pretty-print commands.</p>
+
+    <p><code>(conserve-mem &lt;status&gt;)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;status&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>on | off</code></td>
+        </tr>
+    </table>
+
+    <h3><a name="mem-requests">mem-requests</a></h3>
+
+    <p>Returns the number of times CLIPS has requested memory from the operating system.</p>
+
+    <p><code>(mem-requests)</code></p>
+
+    <h3><a name="mem-used">mem-used</a></h3>
+
+    <p>Returns number of bytes of memory CLIPS is using.</p>
+
+    <p><code>(mem-used)</code></p>
+
+    <h3><a name="release-mem">release-mem</a></h3>
+
+    <p>Releases all free memory held internally by CLIPS to the operating system. Returns the amount of memory
+    freed.</p>
+
+    <p><code>(release-mem)</code></p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Defglobal</title>
+</head>
+
+<body>
+    <h2><a name="defglobal">Defglobal</a></h2>
+
+    <p>With the defglobal construct, global variables can be defined, set, and accessed within the CLIPS environment.
+    Global variables can be accessed as part of the pattern matching process, but changing them does not invoke the
+    pattern matching process. The bind function is used to set the value of global variables.</p>
+
+    <p>The syntax of the defglobal construct is:</p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;defglobal-construct&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>(defglobal [&lt;defmodule-name&gt;]<br>
+            &lt;global-assignment&gt;*)</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;global-assignment&gt;&nbsp;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;global-variable&gt; = &lt;expression&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;global-variable&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>?*&lt;symbol&gt;*</code></td>
+        </tr>
+    </table>
+</body>
+</html>

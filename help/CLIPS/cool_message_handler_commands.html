@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Message Handler Commands</title>
+</head>
+
+<body>
+    <h2>Message Handler Commands</h2>
+
+    <p>The following commands manipulate defmessage-handlers.</p>
+
+    <h3><a name="list-defmessage-handlers">list-defmessage-handlers</a></h3>
+
+    <p>Displays a list of all (or some) defmessage-handlers.</p>
+
+    <p><code>(list-defmessage-handlers [&lt;class-name&gt; [&lt;handler-name&gt; [&lt;handler-type&gt;]]])</code></p>
+
+    <h3><a name="ppdefmessage-handler">ppdefmessage-handler</a></h3>
+
+    <p>Displays the text of a given defmessage-handler.</p>
+
+    <p><code>(ppdefmessage-handler &lt;class-name&gt; &lt;handler-name&gt; [&lt;handler-type&gt;])</code></p>
+
+    <h3><a name="preview-send">preview-send</a></h3>
+
+    <p>Displays a list of all the applicable message-handlers for a message sent to an instance of a particular
+    class.</p>
+
+    <p><code>(preview-send &lt;class-name&gt; &lt;message-name&gt;)</code></p>
+
+    <h3><a name="undefmessage-handler">undefmessage-handler</a></h3>
+
+    <p>Deletes a defmessage-handler.</p>
+
+    <p><code>(undefmessage-handler &lt;class-name&gt; &lt;handler-name&gt; [&lt;handler-type&gt;])</code></p>
+</body>
+</html>

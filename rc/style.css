@@ -1,0 +1,70 @@
+QTextBrowser {
+    border: 2px outset darkgrey;
+    font-size: 14px; 
+    margin: 10px;
+    padding: 10px;
+}
+
+QToolTip {
+    border: 1px solid darkgrey;
+    opacity: 230;
+}
+
+QListView::item {
+    padding: 3px o;
+}
+
+QListView QLineEdit {
+    border-style: none;
+    padding: 0;
+}
+
+QLineEdit {
+    padding: 3px;
+}
+
+QListView::item:selected {
+    background: #888dd9;
+}
+
+QListView::item:hover, 
+QComboBox QAbstractItemView {
+    border-style: none;
+}
+
+QMenu,
+QComboBox,
+QListView,
+QLineEdit,
+QPlainTextEdit,
+QComboBox QAbstractItemView { 
+    selection-background-color: #888dd9; 
+}
+
+QListView, 
+QLineEdit,
+QStatusBar::item {
+    border: 1px solid #708090;
+}
+
+QScrollBar:vertical {
+    width: 5px;
+}
+
+QScrollBar:horizontal {
+    height: 5px;
+}
+
+QScrollBar:vertical,
+QScrollBar:horizontal { 
+    border: none;
+    margin: 0px;
+    background-color: #E6E6FA;
+}
+
+QScrollBar::add-line:vertical,   QScrollBar::sub-line:vertical, 
+QScrollBar::add-page:vertical,   QScrollBar::sub-page:vertical,
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal,
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { 
+    background: transparent;
+}

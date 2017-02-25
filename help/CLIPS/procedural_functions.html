@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Procedural Functions</title>
+</head>
+
+<body>
+    <h2>Procedural Functions</h2>
+
+    <p>The following are functions which provide procedural programming capabilities as found in languages such as
+    Pascal, C, and Ada.</p>
+
+    <h3><a name="bind">bind</a></h3>
+
+    <p>Binds a variable to a new value.</p>
+
+    <p><code>(bind &lt;variable&gt; &lt;expression&gt;*)</code></p>
+
+    <h3><a name="break">break</a></h3>
+
+    <p>Immediately terminates the currently iterating while loop, progn execution, or certain instance set query
+    functions.</p>
+
+    <p><code>(break)</code></p>
+
+    <h3><a name="if">if</a></h3>
+
+    <p>Allows conditional execution of a group of actions.</p>
+
+    <p><code>(if &lt;expression&gt; then &lt;action&gt;* [else &lt;action&gt;*])</code></p>
+
+    <h3><a name="loop-for-count">loop-for-count</a></h3>
+
+    <p>Allows simple iterative looping.</p>
+
+    <p><code>(loop-for-count &lt;range-spec&gt; [do] &lt;action&gt;*)</code></p>
+
+    <p><code>&lt;range-spec&gt; ::= &lt;end-index&gt; |</code></p>
+
+    <p><code>(&lt;loop-variable&gt; [&lt;start-index&gt; &lt;end-index&gt;])</code></p>
+
+    <p><code>&lt;start-index&gt; ::= &lt;integer-expression&gt;</code></p>
+
+    <p><code>&lt;end-index&gt; ::= &lt;integer-expression&gt;</code></p>
+
+    <h3><a name="progn">progn</a></h3>
+
+    <p>Evaluates all arguments and returns the value of the last argument evaluated.</p>
+
+    <p><code>(progn &lt;expression&gt;*)</code></p>
+
+    <h3><a name="progn$">progn$</a></h3>
+
+    <p><code>Performs a set of actions for each field of a multifield value.</code></p>
+
+    <p><code>(progn$ &lt;list-spec&gt; &lt;expression&gt;*)</code></p>
+
+    <p><code>&lt;list-spec&gt; ::= &lt;multifield-expression&gt; |</code></p>
+
+    <p><code>(&lt;list-variable&gt; &lt;multifield-expression&gt;)</code></p>
+
+    <h3><a name="return">return</a></h3>
+
+    <p>Immediately terminates the currently executing deffunction, generic function method, message-handler, defrule
+    RHS, or certain instance set query functions and if a value is specified, returns this value as the result of the
+    executing construct.</p>
+
+    <p><code>(return [&lt;expression&gt;])</code></p>
+
+    <h3><a name="switch">switch</a></h3>
+
+    <p>Allows a particular group of actions to be performed based on a specified value.</p>
+
+    <p><code>(switch &lt;test-expression&gt;</code></p>
+
+    <p><code>&lt;case-statement&gt;*</code></p>
+
+    <p><code>[&lt;default-statement&gt;])</code></p>
+
+    <p><code>&lt;case-statement&gt; ::= (case &lt;comparison-expression&gt; then &lt;action&gt;*)</code></p>
+
+    <p><code>&lt;default-statement&gt; ::= (default &lt;action&gt;*)</code></p>
+
+    <h3><a name="while">while</a></h3>
+
+    <p><code>Allows conditional looping.</code></p>
+
+    <p><code><code>(while &lt;expression&gt; [do] &lt;action&gt;*)</code></code></p>
+</body>
+</html>

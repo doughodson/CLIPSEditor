@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Deftemplate Functions</title>
+</head>
+
+<body>
+    <h2>Deftemplate Functions</h2>
+
+    <p>The following functions provide ancillary capabilities for the deftemplate construct.</p>
+
+    <h3><a name="deftemplate-module">deftemplate-module</a></h3>
+
+    <p>Returns the module in which the specified deftemplate is defined.</p>
+
+    <p><code>(deftemplate-module &lt;deftemplate-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-allowed-values">deftemplate-slot-allowed-values</a></h3>
+
+    <p>Returns a multifield containing the allowed values for a deftemplate slot.</p>
+
+    <p><code>(deftemplate-slot-allowed-values &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-cardinality">deftemplate-slot-cardinality</a></h3>
+
+    <p>Returns a multifield containing the minimum and maximum cardinality allowed for a multifield slot.</p>
+
+    <p><code>(deftemplate-slot-cardinality &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-defaultp">deftemplate-slot-defaultp</a></h3>
+
+    <p>Returns either static, dynamic, or FALSE to indicate whether the deftemplate slot has a default.</p>
+
+    <p><code>(deftemplate-slot-defaultp &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-default-value">deftemplate-slot-default-value</a></h3>
+
+    <p>Returns the default value for the deftemplate slot.</p>
+
+    <p><code>(deftemplate-slot-default-value &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-existp">deftemplate-slot-existp</a></h3>
+
+    <p>Returns TRUE if the specified deftemplate slot exists, otherwise FALSE.</p>
+
+    <p><code>(deftemplate-slot-existp &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-multip">deftemplate-slot-multip</a></h3>
+
+    <p>Returns TRUE if the specified deftemplate slot is a multifield slot, otherwise FALSE.</p>
+
+    <p><code>(deftemplate-slot-multip &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-names">deftemplate-slot-names</a></h3>
+
+    <p>Returns the slot names associated with the deftemplate in a multifield value.</p>
+
+    <p><code>(deftemplate-slot-names &lt;deftemplate-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-range">deftemplate-slot-range</a></h3>
+
+    <p>Returns a multifield containing the minimum and maximum numeric range allowed for a slot.</p>
+
+    <p><code>(deftemplate-slot-range &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-singlep">deftemplate-slot-singlep</a></h3>
+
+    <p>Returns TRUE if the specified deftemplate slot is a single-field slot, otherwise FALSE.</p>
+
+    <p><code>(deftemplate-slot-singlep &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="deftemplate-slot-types">deftemplate-slot-types</a></h3>
+
+    <p>Returns a multifield containing the primitive types allowed for a slot.</p>
+
+    <p><code>(deftemplate-slot-types &lt;deftemplate-name&gt; &lt;slot-name&gt;)</code></p>
+
+    <h3><a name="get-deftemplate-list">get-deftemplate-list</a></h3>
+
+    <p>Returns the list of all deftemplates in the specified module (or the current module if unspecified).</p>
+
+    <p><code>(get-deftemplate-list [&lt;module-name&gt;])</code></p>
+</body>
+</html>

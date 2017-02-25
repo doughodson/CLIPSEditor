@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Defmessage Handler</title>
+</head>
+
+<body>
+    <h2><a name="defmessage-handler">Defmessage Handler</a></h2>
+
+    <p>Objects are manipulated by sending them messages via the function send. The result of a message is a useful
+    return-value or side-effect. A defmessage-handler is a construct for specifying the behavior of a class of objects
+    in response to a particular message. The implementation of a message is made up of pieces of procedural code called
+    message-handlers (or handlers for short). Each class in the class precedence list of an object's class can have
+    handlers for a message. In this way, the object's class and all its superclasses share the labor of handling the
+    message. Each class's handlers handle the part of the message which is appropriate to that class. Within a class,
+    the handlers for a particular message can be further subdivided into four types or categories: primary, before,
+    after and around.</p>
+
+    <p>A defmessage-handler is comprised of seven elements:</p>
+
+    <ul>
+        <li>1) a class name to which to attach the handler (the class must have been previously defined),</li>
+
+        <li>2) a message name to which the handler will respond,</li>
+
+        <li>3) an optional type (the default is primary),</li>
+
+        <li>4) an optional comment,</li>
+
+        <li>5) a list of parameters that will be passed to the handler during execution,</li>
+
+        <li>6) an optional wildcard parameter and</li>
+
+        <li>7) a series of expressions which are executed in order when the handler is called. The return-value of a
+        message-handler is the evaluation of the last expression in the body.</li>
+    </ul>
+
+    <p>The syntax of the defmessage-handler construct is:</p>
+
+    <p><code>(defmessage-handler &lt;class-name&gt; &lt;message-name&gt;<br>
+    &nbsp;[&lt;handlertype&gt;] [&lt;comment&gt;]<br>
+    &nbsp;(&lt;parameter&gt;* [&lt;wildcard-parameter&gt;])<br>
+    &nbsp;&lt;action&gt;*)</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;handler-type&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>around | before | primary | after</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;parameter&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;single-field-variable&gt;</code></td>
+        </tr>
+
+        <tr>
+            <td valign="top"><code>&lt;wildcard-parameter&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>&lt;multifield-variable&gt;</code></td>
+        </tr>
+    </table>
+</body>
+</html>

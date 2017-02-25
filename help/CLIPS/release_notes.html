@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>New Features and where to get support</title>
+</head>
+
+<body>
+    <h3>Support Information</h3>
+    
+    <p>The most recent versions of CLIPS executables, documentation, and source
+    code are available on the <a href="http://sourceforge.net/project/showfiles.php?group_id=215471&package_id=260062">SourceForge CLIPS Download Page</a>.</p>
+
+    <p>Questions regarding CLIPS can be posted to one of several online forums including the <a href="http://groups.google.com/group/CLIPSESG/">CLIPS Expert System Group</a>, 
+    the <a href="http://sourceforge.net/forum/?group_id=215471">SourceForge CLIPS Forums</a>, and <a href=" http://stackoverflow.com/questions/tagged/clips">Stack Overflow</a>.</p>
+
+    <p>Bugs and Feature Requests can be submitted to the <a href="http://sourceforge.net/p/clipsrules/_list/tickets">SourceForge CLIPS Tickets Page</a>.</p>
+
+    <p>Questions regarding CLIPS can be sent via electronic mail to <a HREF="mailto:clipssupport@secretsocietysoftware.com">clipssupport@secretsocietysoftware.com</a>.</p>
+          
+    <h3>VERSION 6.30</h3>
+    
+    <ul>
+        <li><b>Performance  Improvements</b>  –  Rule  performance  has  been  improved  particularly  in 
+        situations with large numbers of fact/instances or partial matches.</li>
+    </ul>
+    
+    <ul>
+        <li><b>64-bit Integers</b> – Integers in CLIPS are now represented using the “long long” C data type 
+        which provides a minimum of 64 bits of precision.</li>
+    </ul>
+    
+    <ul>
+        <li><b>Reset  after  Clear</b> – A  reset  command  is  now  performed  after  a  clear  command  (which 
+        includes the clear command issued internally by CLIPS when it is started). Since no user 
+        constructs will be present after a clear, the primary effect of this behavior is to create the 
+        initial-fact and initial-object.</li>
+    </ul>  
+    
+    <ul>    
+        <li><b>Pattern  Addition</b>  –  The  initial-fact  and  initial-object  patterns  are  no  longer  used  in 
+        triggering  rules.  When  printing  partial  matches,  the  *  symbol  is  used  to  indicate  a  not  or 
+        exists pattern that is satisfied.</li>
+    </ul>  
+    
+    <ul>    
+        <li><b>Module  Specifiers</b>  –  A  module  specifier  can  be  used  in  expressions  to  reference  a 
+        deffunction or defgeneric that is exported by a module, but not specifically imported by the 
+        module which is referencing it. For example: (UTIL::my-function a 3).</li> 
+    </ul>      
+    
+    <ul>    
+        <li><b>Instance Name and Class Visibility</b> – Instance names now have global scope and must be 
+        unique regardless of their module. Instances of classes that are not in scope can be created if 
+        the module name is specified as part of the class name. Messages can be sent to instances 
+        regardless of whether the instance class is in scope.</li> 
+    </ul> 
+
+    <ul>    
+        <li><b>Command  Prompt</b>  –  Local  variables  bound  at  the  command  prompt  using  the  bind 
+        function persist until a reset or clear command is issued (see section 2.1.1).</li> 
+    </ul>    
+   
+    <ul>
+        <li><b>Printout Function</b> – The deprecated use of the symbol t as a substitute for the crlf symbol 
+        is no longer allowed.</li>
+    </ul>  
+    
+    <ul>    
+        <li><b>MicroEMACS Editor</b> – The built-in editor is no longer supported.</li> 
+    </ul>
+    
+    <ul>    
+        <li><b>New Functions and Commands</b> - Several new functions and commands have been added. They are:</li>
+        
+        <ul>  
+            <li><b>foreach</b>  (see section 12.6.10)</li> 
+            <li><b>operating-system</b> (see section 12.7.12)</li>
+        </ul>
+    </ul>
+    
+    <ul>    
+        <li><b>Command  and  Function  Changes</b> - The  following  commands  and  functions  have  been 
+        hanced:</li> 
+        
+        <ul>  
+            <li><b>matches</b> (see section 13.6.4). This command now has a return value indicating the number 
+            of matches, partial matches, and activations. The amount of output can be controlled with a 
+            verbosity argument.</li> 
+            <li><b>open</b> (see section 12.4.2.1). The r+ mode is no longer supported. New modes ab and rb have 
+            been added.</li>  
+       </ul>
+    </ul>
+       
+    <ul>    
+        <li><b>Help Functions</b> – The help and help-path funtions are no longer supported</li>  
+    </ul>
+    
+    <ul>    
+        <li><b>Behavior Changes</b> - The following changes have been made to behavior:
+    
+        <ul>  
+            <li>A defgeneric redefinition warning is no longer printed when a defmethod is defined.</li>
+        </ul>
+    </ul>
+    
+    <h3>VERSION 6.24</h3>
+
+    <ul>
+        <li><b>Allowed Classes Constraint Attribute</b> - The allowed-classes constraint attribute allows a slot
+        containing an instance value to be restricted to the specified list of classes (see section 11.2 of the
+        <i>Basic Programming Guide</i>).</li>
+    </ul>
+
+    <ul>
+        <li><b>New Functions and Commands</b> - The following commands and functions have been added:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li><b>deftemplate-slot-allowed-values</b> (see section 12.8.2 of the <i>Basic Programming
+                Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-cardinality</b> (see section 12.8.3 of the <i>Basic Programming
+                Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-defaultp</b> (see section 12.8.4 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-default-value</b> (see section 12.8.5 of the <i>Basic Programming
+                Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-existp</b> (see section 12.8.6 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-multip</b> (see section 12.8.7 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-names</b> (see section 12.8.8 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-range</b> (see section 12.8.9 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-singlep</b> (see section 12.8.10 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>deftemplate-slot-type</b> (see section 12.8.11 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>get-char</b> (see section 12.4.2.9 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>get-region</b> (see section 13.15.2.3 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>ppfact</b> (see section 13.4.6 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>read-number</b> (see section 12.4.2.10 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>set-locale</b> (see section 12.4.2.11 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+
+            <ul>
+                <li><b>slot-allowed-classes</b> (see section 12.16.1.27 of the <i>Basic Programming Guide</i>).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li><b>Command and Function Changes</b> - The following commands and functions have been enhanced:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li><b>format</b> (see section 12.4.2.6 of the <i>Basic Programming Guide</i>). The formatting of
+                printed numbers can be changed to use a native locale with the set-locale function. The documentation
+                has been updated to include the effect of the precision argument on the d, g, o, and x format
+                flags.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li><b>Behavior Changes</b> - The following changes have been made to behavior:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li>The message displayed when a construct is redefined and compilations are being watched is now more
+                prominent.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li><b>Bug Fixes</b> - The following bugs were fixed by the 6.24 release:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li>The DescribeClass macros were incorrectly defined.</li>
+            </ul>
+
+            <ul>
+                <li>The sort function leaks memory when called with a multifield value of length zero.</li>
+            </ul>
+
+            <ul>
+                <li>Link error occurred for the SlotExistError function when OBJECT_SYSTEM is set to 0 in setup.h.</li>
+            </ul>
+
+            <ul>
+                <li>An error when calling the Eval function causes a subsequent call to DeallocateEnvironmentData to
+                fail.</li>
+            </ul>
+
+            <ul>
+                <li>Loading a binary instance file from a run-time program caused a bus error.</li>
+            </ul>
+
+            <ul>
+                <li>Incorrect activations could occur with the exists CE.</li>
+            </ul>
+
+            <ul>
+                <li>Compilation errors occurred when compiling CLIPS source as C++ files.</li>
+            </ul>
+
+            <ul>
+                <li>The AssignFactSlotDefaults function did not correctly handle defaults for multifield slots.</li>
+            </ul>
+
+            <ul>
+                <li>The slot-default-value function crashed when no default existed for a slot (the ?NONE value was
+                specified).</li>
+            </ul>
+
+            <ul>
+                <li>CLIPS crashed on AMD64 processor in the function used to generate hash values for integers.</li>
+            </ul>
+
+            <ul>
+                <li>A syntax error was not generated for the last deffunction or defmethod in a file if it was missing
+                the final closing right parenthesis.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li><b>Compiler Support</b> - The following compilers are now supported. See the <i>Interfaces Guide</i> for
+        more details.</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li>Metrowerks CodeWarrior 9.6 for Mac OS X.</li>
+            </ul>
+
+            <ul>
+                <li>Xcode 2.3 for Mac OS X.</li>
+            </ul>
+
+            <ul>
+                <li>Microsoft Visual C++ .NET 2003 for Windows.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>VERSION 6.23</h3>
+
+    <ul>
+        <li><b>Fact-Set Query Functions</b> - Six new functions similar to the instance set query functions have been
+        added for determining and performing actions on sets of facts that satisfy user-defined queries (see section
+        12.9.12 of the <i>Basic Programming Guide</i>): any-factp, find-fact, find-all-facts, do-for-fact,
+        do-for-all-facts, and delayed-do-for-all-facts. The GetNextFactInTemplate function (see section 4.4.17 of the
+        <i>Advanced Programming Guide</i>) allows iteration from C over the facts belonging to a specific
+        deftemplate.</li>
+    </ul>
+
+    <ul>
+        <li><b>Bug Fixes</b> - The following bugs were fixed by the 6.23 release:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li>Passing the wrong number of arguments to a deffunction through the funcall function could cause
+                unpredictable behavior including memory corruption.</li>
+            </ul>
+
+            <ul>
+                <li>A large file name (at least 60 characters) passed into the fetch command causes a buffer
+                overrun.</li>
+            </ul>
+
+            <ul>
+                <li>A large file name (at least 60 characters) passed into the constructs-to-c command causes a buffer
+                overrun.</li>
+            </ul>
+
+            <ul>
+                <li>A large defclass or defgeneric name (at least 500 characters) causes a buffer overrun when the
+                profile-info command is called.</li>
+            </ul>
+
+            <ul>
+                <li>A large module or construct name (at least 500 characters) causes a buffer overrun when the
+                get-&lt;construct&gt;-list command is called.</li>
+            </ul>
+
+            <ul>
+                <li>The FalseSymbol and TrueSymbol constants were not defined as described in the <i>Advanced
+                Programming Guide</i>. These constants have have now been defined as macros so that their corresponding
+                environment companion functions (EnvFalseSymbol and EnvTrueSymbol) could be defined. See the
+                <i>Advanced Programming Guide</i> for more details.</li>
+            </ul>
+
+            <ul>
+                <li>The slot-writablep function returns TRUE for slots having initialize-only access.</li>
+            </ul>
+
+            <ul>
+                <li>Files created by the constructs-to-c function for use in a run-time program generate compilation
+                errors.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li><b>Command and Function Changes</b> - The following commands and functions have been enhanced:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li><b>funcall</b> (see section 12.7.10). Multifield arguments are no longer expanded into multiple
+                arguments before being passed to the target function of the funcall. The expand$ function can be placed
+                around an argument to revert to the old behavior.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li><b>Compiler Support</b> - The following compilers are now supported. See the <i>Interfaces Guide</i> for
+        more details.</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li>Metrowerks CodeWarrior 9.4 for Mac OS X and Windows.</li>
+            </ul>
+
+            <ul>
+                <li>Xcode 1.2 for Mac OS X.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>VERSION 6.22</h3>
+
+    <ul>
+        <li><b>Bug Fixes</b> - The following bugs were fixed by the 6.22 release:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li>Numerous fixes for functions and macros that did not accept the correct number of arguments as
+                specified in the <i>Advanced Programming Guide</i>. The following functions and macros were corrected:
+                Agenda, BatchStar, EnvGetActivationSalience, EnvBatchStar, EnvFactDeftemplate, EnvFactExistp,
+                EnvFactList, EnvFactSlotNames, EnvGetNextInstanceInClassAndSubclasses, EnvLoadInstancesFromString,
+                EnvRestoreInstancesFromString, EnvSetOutOfMemoryFunction, FactDeftemplate, FactExistp, FactList,
+                FactSlotNames, GetNextInstanceInClassAndSubclasses, LoadInstancesFromString,
+                RestoreInstancesFromString, and SetOutOfMemoryFunction.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>VERSION 6.21</h3>
+
+    <ul>
+        <li><b>Bug Fixes</b> - The following bugs were fixed by the 6.21 release:</li>
+
+        <li style="list-style: none; display: inline">
+            <ul>
+                <li>The C GetDefglobalValue macro did not have the correct number of arguments.</li>
+            </ul>
+
+            <ul>
+                <li>The C RtnArgCount macro did not have the correct number of arguments.</li>
+            </ul>
+
+            <ul>
+                <li>Erroneous error generated for object pattern under some circumstances.</li>
+            </ul>
+
+            <ul>
+                <li>The C Save macro did not have the correct number of arguments.</li>
+            </ul>
+
+            <ul>
+                <li>The C Eval and Build functions did not have the correct number of arguments.</li>
+            </ul>
+
+            <ul>
+                <li>The progn$ index variable did not always return the correct value.</li>
+            </ul>
+
+            <ul>
+                <li>The member$ function did not always return the correct value.</li>
+            </ul>
+
+            <ul>
+                <li>C++ style comments in the code caused errors when using strict ANSI C compilation.</li>
+            </ul>
+
+            <ul>
+                <li>The C LoadFactsFromString function did not have the correct number of arguments.</li>
+            </ul>
+
+            <ul>
+                <li>Prior bug fix to the PutFactSlot C function prevented memory associated with the fact to be garbage
+                collected after the fact had been retracted. The original bug is now fixed through a new API which
+                allows embedded programs to temporarily disable garbage collection. See section 1.4 of <i>The Advanced
+                Programming Guide</i> for more details.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

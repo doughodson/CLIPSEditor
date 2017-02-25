@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>help/clipshelp.qch</file>
+        <file>help/clipshelp.qhc</file>
+        <file>lang/clipseditor_ru.qm</file>
+        <file>lang/qtbase_ru.qm</file>
+        <file>rc/icon.png</file>
+        <file>rc/style.css</file>
+        <file>rc/bookmark.png</file>
+        <file>rc/icon.ico</file>
+    </qresource>
+</RCC>

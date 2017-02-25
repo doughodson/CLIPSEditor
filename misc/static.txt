@@ -1,0 +1,18 @@
+1. Добавляем в файл C:\Qt\Qt5.4.1\5.4\Src\qtbase\mkspecs\win32-g++\qmake.conf:   
+    QMAKE_LFLAGS += -static -static-libgcc
+    QMAKE_CFLAGS_RELEASE -= -O2
+    QMAKE_CFLAGS_RELEASE += -Os -momit-leaf-frame-pointer
+    DEFINES += QT_STATIC_BUILD
+    
+2. Запускаем конфигуратор (-prefix C:\Qt\Qt5.4.1\5.4\mingw491_32s или set QT_INSTALL_PREFIX=C:\...):    
+   configure.bat -static -debug-and-release -platform win32-g++ -prefix C:\Qt\Qt5.4.1\5.4\mingw491_32s -qt-zlib -qt-pcre -qt-libpng -qt-libjpeg -qt-freetype -opengl desktop -qt-sql-sqlite -no-openssl -opensource -confirm-license -make libs -nomake tools -nomake examples -nomake tests
+
+   mingw32-make -k -j4
+   mingw32-make -k install
+
+3. Настроив Creator на статику, открываем проект C:\Qt\Qt5.4.1\5.4\Src\qttools и
+   собираем статические библиотеки:
+    C:\Qt\Qt5.4.1\5.4\Src\qttools\src\assistant\clucene
+    C:\Qt\Qt5.4.1\5.4\Src\qttools\src\assistant\help
+    
+4. Снимаем комментарий с "CONFIG += static upx" в CLIPSEditor.pro

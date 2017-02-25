@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Generic Function Commands</title>
+</head>
+
+<body>
+    <h2>Generic Function Commands</h2>
+
+    <p>The following commands manipulate generic functions.</p>
+
+    <h3><a name="list-defgenerics">list-defgenerics</a></h3>
+
+    <p>Displays the names of all generic functions in the specified module (or the current module if none
+    specified).</p>
+
+    <p><code>(list-defgenerics [&lt;module-name&gt;])</code></p>
+
+    <h3><a name="list-defmethods">list-defmethods</a></h3>
+
+    <p>Displays a list of generic function methods.</p>
+
+    <p><code>(list-defmethods [&lt;generic-function-name&gt;])</code></p>
+
+    <h3><a name="ppdefgeneric">ppdefgeneric</a></h3>
+
+    <p>Displays the text of a given generic function header.</p>
+
+    <p><code>(ppdefgeneric &lt;generic-function-name&gt;)</code></p>
+
+    <h3><a name="ppdefmethod">ppdefmethod</a></h3>
+
+    <p>Displays the text of a given method.</p>
+
+    <p><code>(ppdefmethod &lt;generic-function-name&gt; &lt;index&gt;)</code></p>
+
+    <h3><a name="preview-generic">preview-generic</a></h3>
+
+    <p>Lists all applicable methods for a particular generic function call in order of decreasing precedence.</p>
+
+    <p><code>(preview-generic &lt;generic-function-name&gt; &lt;expression&gt;*)</code></p>
+
+    <h3><a name="undefgeneric">undefgeneric</a></h3>
+
+    <p>Deletes a generic function.</p>
+
+    <p><code>(undefgeneric &lt;generic-function-name&gt;)</code></p>
+
+    <h3><a name="undefmethod">undefmethod</a></h3>
+
+    <p>Deletes a generic function method.</p>
+
+    <p><code>(undefmethod &lt;generic-function-name&gt; &lt;index&gt;)</code></p>
+</body>
+</html>

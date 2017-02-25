@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Fact Commands</title>
+</head>
+
+<body>
+    <h2>Fact Commands</h2>
+
+    <p>The following commands display information about facts.</p>
+
+    <h3><a name="dependencies">dependencies</a></h3>
+
+    <p>Lists the partial matches from which a fact or instance receives logical support.</p>
+
+    <p><code>(dependencies &lt;fact-or-instance-specifier&gt;)</code></p>
+
+    <h3><a name="dependents">dependents</a></h3>
+
+    <p>Lists all facts or instances which receive logical support from a fact or instance.</p>
+
+    <p><code>(dependents &lt;fact-or-instance-specifier&gt;)</code></p>
+
+    <h3><a name="facts">facts</a></h3>
+
+    <p>Display the facts in the fact-list.</p>
+
+    <p><code>(facts [&lt;module-name&gt;]<br>
+    &nbsp;[&lt;start-integer-expression&gt;<br>
+    &nbsp;[&lt;end-integer-expression&gt;<br>
+    &nbsp;[&lt;max-integer-expression&gt;]]])</code></p>
+
+    <h3><a name="get-fact-duplication">get-fact-duplication</a></h3>
+
+    <p>Returns the fact duplication behavior.</p>
+
+    <p><code>(get-fact-duplication)</code></p>
+
+    <h3><a name="load-facts">load-facts</a></h3>
+
+    <p>Asserts facts loaded from a file.</p>
+
+    <p><code>(load-facts &lt;file-name&gt;)</code></p>
+
+    <h3><a name="ppfact">ppfact</a></h3>
+
+    <p>Displays the text of a given fact.</p>
+
+    <p><code>(ppfact &lt;fact-specifier&gt; [&lt;logical-name&gt; [&lt;ignore-defaults-flag&gt;]])</code></p>
+
+    <h3><a name="save-facts">save-facts</a></h3>
+
+    <p>Saves facts to a file.</p>
+
+    <p><code>(save-facts &lt;file-name&gt; [&lt;save-scope&gt; &lt;deftemplate-names&gt;*])</code></p>
+
+    <table border="0" cellpadding="0" cellspacing="0" id="table1">
+        <tr>
+            <td valign="top"><code>&lt;save-scope&gt;</code></td>
+
+            <td valign="top"><code>&nbsp;::=&nbsp;</code></td>
+
+            <td valign="top"><code>visible | local</code></td>
+        </tr>
+    </table>
+
+    <h3><a name="set-fact-duplication">set-fact-duplication</a></h3>
+
+    <p>Sets the fact duplication behavior.</p>
+
+    <p><code>(set-fact-duplication &lt;boolean-expression&gt;)</code></p>
+</body>
+</html>

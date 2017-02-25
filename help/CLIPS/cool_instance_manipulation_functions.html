@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+    <title>Instance Manipulation Functions</title>
+</head>
+
+<body>
+    <h2>Instance Manipulation Functions</h2>
+
+    <p>The following manipulation functions are used with instances.</p>
+
+    <h3><a name="class">class</a></h3>
+
+    <p>Returns a symbol which is the name of the class of its argument.</p>
+
+    <p><code>(class &lt;object-expression&gt;)</code></p>
+
+    <h3><a name="delete-instance">delete-instance</a></h3>
+
+    <p>Deletes the active instance when called from within the body of a message-handler.</p>
+
+    <p><code>(delete-instance)</code></p>
+
+    <h3><a name="init-slots">init-slots</a></h3>
+
+    <p>Implements the init message-handler attached to the class USER. This function should never be called directly
+    unless an init message-handler is being defined such that the one attached to USER will never be called.</p>
+
+    <p><code>(init-slots)</code></p>
+
+    <h3><a name="instance-address">instance-address</a></h3>
+
+    <p>Returns the address of its instance argument.</p>
+
+    <p><code>(instance-address &lt;instance-expression&gt;)</code></p>
+
+    <h3><a name="instance-name">instance-name</a></h3>
+
+    <p>Returns a symbol which is the name of its instance argument.</p>
+
+    <p><code>(instance-name &lt;instance-expression&gt;)</code></p>
+
+    <h3><a name="instance-name-to-symbol">instance-name-to-symbol</a></h3>
+
+    <p>Converts an instance name to a symbol.</p>
+
+    <p><code>(instance-name-to-symbol &lt;instance-name-expression&gt;)</code></p>
+
+    <h3><a name="symbol-to-instance-name">symbol-to-instance-name</a></h3>
+
+    <p>Converts a symbol to an instance name.</p>
+
+    <p><code>(symbol-to-instance-name &lt;symbol-expression&gt;)</code></p>
+
+    <h3><a name="unmake-instance">unmake-instance</a></h3>
+
+    <p>Deletes the specified instance by sending it the delete message.</p>
+
+    <p><code>(unmake-instance &lt;instance-expression&gt; | *)</code></p>
+</body>
+</html>
